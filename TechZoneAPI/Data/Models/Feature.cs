@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 using static TechZoneAPI.Data.DataConstants.Common;
-using static TechZoneAPI.Data.DataConstants.Product;
+using static TechZoneAPI.Data.DataConstants.Feature;
 
 namespace TechZoneAPI.Data.Models
 {
-    public class Product
+    public class Feature
     {
         [Key]
         [Required]
         [MaxLength(IdMaxLength)]
         public string Id { get; init; } = Guid.NewGuid().ToString();
 
-        [MaxLength(ModelMaxLength)]
-        public string Model { get; set; }
+        [Required]
+        [MaxLength(NameMaxLength)]
+        public string Name { get; set; }
 
         [Required]
-        public string BrandId { get; set; }
+        [MaxLength(ValueMaxLength)]
+        public string Value { get; set; }
 
-        public Brand Brand { get; set; }
-
-        public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
+        public ICollection<Product> Products { get; init; } = new HashSet<Product>();
     }
 }

@@ -14,6 +14,7 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(IdMaxLength)]
         public string Id { get; init; } = Guid.NewGuid().ToString();
 
+        [Required]
         [MaxLength(NameMaxLength)]
         public string Name { get; set; }
 
