@@ -1,6 +1,12 @@
-﻿namespace TechZoneAPI.Data
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace TechZoneAPI.Data
 {
-    public class TechZoneDbContext
+    public class TechZoneDbContext : DbContext
     {
+        public TechZoneDbContext(DbContextOptions options)
+            : base(options)
+        {
+        }
     }
 }
