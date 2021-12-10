@@ -22,6 +22,12 @@ namespace TechZoneAPI.Data.Models
 
         public Brand Brand { get; set; }
 
+        public decimal Price { get; set; }
+
+        public decimal? Delivery { get; set; }
+
         public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
+
+        public ICollection<Image> Images { get; init; } = new HashSet<Image>();
     }
 }
