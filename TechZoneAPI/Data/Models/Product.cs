@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-using static TechZoneAPI.Data.DataConstants.Common;
 using static TechZoneAPI.Data.DataConstants.Product;
 
 namespace TechZoneAPI.Data.Models
 {
     public class Product
     {
-        [Key]
-        [Required]
-        [MaxLength(IdMaxLength)]
-        public string Id { get; init; } = Guid.NewGuid().ToString();
+        public int Id { get; init; }
 
         [MaxLength(ModelMaxLength)]
         public string Model { get; set; }
