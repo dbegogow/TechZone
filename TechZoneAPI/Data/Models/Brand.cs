@@ -1,13 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 using static TechZoneAPI.Data.DataConstants.Brand;
+using static TechZoneAPI.Data.DataConstants.Common;
 
 namespace TechZoneAPI.Data.Models
 {
     public class Brand
     {
-        public int Id { get; init; }
+        [Key]
+        [Required]
+        [MaxLength(IdMaxLength)]
+        public string Id { get; init; } = Guid.NewGuid().ToString();
 
         [Required]
         [MaxLength(NameMaxLength)]

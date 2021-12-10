@@ -1,17 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+using static TechZoneAPI.Data.DataConstants.Common;
 using static TechZoneAPI.Data.DataConstants.Feature;
 
 namespace TechZoneAPI.Data.Models
 {
     public class Feature
     {
-        public int Id { get; init; }
+        [Key]
+        [Required]
+        [MaxLength(IdMaxLength)]
+        public string Id { get; init; } = Guid.NewGuid().ToString();
 
         [Required]
-        [MaxLength(NameMaxLength)]
-        public string Name { get; set; }
+        public string FeatureTypeId { get; set; }
+
+        public FeatureType FeatureType { get; set; }
 
         [Required]
         [MaxLength(ValueMaxLength)]
