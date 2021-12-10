@@ -23,6 +23,8 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(ValueMaxLength)]
         public string Value { get; set; }
 
+        public bool IsMain { get; init; }
+
         public ICollection<Product> Products { get; init; } = new HashSet<Product>();
     }
 }

@@ -26,6 +26,10 @@ namespace TechZoneAPI.Data.Models
 
         public decimal? Delivery { get; set; }
 
+        public string Description { get; set; }
+
+        public bool IsArchive { get; set; }
+
         public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
 
         public ICollection<Image> Images { get; init; } = new HashSet<Image>();
