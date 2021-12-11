@@ -103,10 +103,13 @@
     margin-right: 45px;
 }
 
+.user-items-management a {
+    display: inline-block;
+}
+
 .user-items-management i {
     font-size: 1.6rem;
     margin-right: 13px;
-    cursor: pointer;
 }
 
 .user-items-management span {
