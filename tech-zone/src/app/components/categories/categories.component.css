@@ -1,13 +1,20 @@
 .container {
+    display: flex;
+}
+
+.menu {
     display: inline-block;
     margin-top: 90px;
     margin-left: 30px;
     background: #174AAB;
     color: #FFF;
-    padding: 20px 15px;
 }
 
 .container ul {
+    padding: 0;
+}
+
+.menu ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
@@ -15,16 +22,54 @@
     display: inline-block;
 }
 
-.container ul li {
-    margin-bottom: 22px;
+.menu ul li {
     display: flex;
     gap: 17px;
+    padding: 11px 16px;
 }
 
-.container ul li:last-child {
-    margin-bottom: 0;
+.menu ul li:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
+    transition: 0.1s ease;
 }
 
-.container ul li i {
+.menu ul li i {
     width: 20px;
+}
+
+.categories {
+    margin-top: 90px;
+    width: 530px;
+    padding: 5px 30px;
+    display: none;
+}
+
+.categories h2 {
+    font-size: 1.7rem;
+}
+
+.categories div {
+    display: flex;
+    gap: 70px;
+}
+
+.categories div ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.categories div ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.categories div ul li:hover {
+    cursor: pointer;
+    color: #D42525;
+}
+
+.categories div ul li a {
+    display: block;
 }
