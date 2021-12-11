@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 using static TechZoneAPI.Data.DataConstants.Feature;
 
@@ -11,5 +12,7 @@ namespace TechZoneAPI.Data.Models
         [Required]
         [MaxLength(NameMaxLength)]
         public string Name { get; set; }
+
+        public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
     }
 }

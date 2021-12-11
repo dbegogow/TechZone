@@ -24,6 +24,32 @@ namespace TechZoneAPI.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder
+                .Entity<Product>()
+                .HasOne(p => p.Brand)
+                .WithMany(b => b.Products)
+                .HasForeignKey(p => p.BrandId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<Product>()
+                .HasOne(p => p.Category)
+                .WithMany(c => c.Products)
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<Product>()
+                .HasMany(p => p.Features)
+                .WithMany(f => f.Products);
+
+            builder
+                .Entity<Feature>()
+                .HasOne(f => f.FeatureType)
+                .WithMany(ft => ft.Features)
+                .HasForeignKey(f => f.FeatureTypeId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             base.OnModelCreating(builder);
         }
     }
