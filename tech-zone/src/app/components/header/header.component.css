@@ -40,3 +40,37 @@
 .container .search::placeholder {
     color: #4B4B4B;
 }
+
+.container .fa-search {
+    color: #FFF;
+    font-size: 1.7rem;
+    position: relative;
+    top: 8px;
+    right: 25px;
+}
+
+.contacts-container {
+    display: inline-block;
+    margin-left: 18vw;
+    position: relative;
+    top: 13px;
+    height: 40px;
+    color: #FFF;
+    border-left: 1px solid #686868;
+    border-right: 1px solid #686868;
+    padding: 0 20px;
+}
+
+.contacts-container .phone-number {
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    font-size: 1.1rem;
+}
+
+.contacts-container .phone-number .fa-phone-alt {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1px;
+    margin-right: 8px;
+}
