@@ -45,6 +45,7 @@
     width: 33vw;
     padding: 10px;
     font-size: 0.9rem;
+    cursor: default;
 }
 
 .container .search::placeholder {
@@ -57,6 +58,7 @@
     position: relative;
     top: 8px;
     right: 25px;
+    cursor: pointer;
 }
 
 .contacts-container {
@@ -104,6 +106,7 @@
 .user-items-management i {
     font-size: 1.6rem;
     margin-right: 13px;
+    cursor: pointer;
 }
 
 .user-items-management span {
