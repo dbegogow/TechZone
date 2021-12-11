@@ -32,6 +32,10 @@
     top: 16px;
 }
 
+.container .logo .mobile {
+    display: none;
+}
+
 .container .search {
     outline: none;
     height: 42px;
@@ -110,4 +114,79 @@
     padding: 2px 3px;
     background: rgba(0, 0, 0, 0.4);
     font-size: 0.9rem;
+}
+
+@media (max-width: 1100px) {
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        height: 50px;
+    }
+
+    .container .logo {
+        top: 4px;
+        left: 25px;
+        font-size: 1.8rem;
+    }
+
+    .container .logo .desktop {
+        display: none;
+    }
+
+    .container .logo .mobile {
+        display: inline-block;
+    }
+
+    .container .fa-search {
+        top: 6px;
+        left: 45px;
+    }
+
+    .contacts-container {
+        height: 25px;
+    }
+
+    .contacts-container .phone-number {
+        bottom: 13px;
+        font-size: 1rem;
+    }
+    
+    .contacts-container a {
+        bottom: 13px;
+        font-size: 1rem;
+    }
+
+    .container .user-items-management {
+        margin-left: 20px;
+        top: 3px;
+        margin-right: 25px;
+    }
+    
+    .user-items-management i {
+        font-size: 1.4rem;
+    }
+    
+    .user-items-management span {
+        position: relative;
+        right: 10px;
+        bottom: 15px;
+        border-radius: 50%;
+        padding: 2px 3px;
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .container .contacts-container {
+        display: none;
+    }
+
+    .container .user-items-management {
+        top: 17px;
+    }
 }
