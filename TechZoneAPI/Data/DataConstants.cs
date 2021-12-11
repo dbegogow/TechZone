@@ -26,5 +26,11 @@
             public const int NameMaxLength = 25;
             public const int ValueMaxLength = 40;
         }
+
+        public class Category
+        {
+            public const int NameMaxLength = 30;
+            public const int NameMinLength = 2;
+        }
     }
 }

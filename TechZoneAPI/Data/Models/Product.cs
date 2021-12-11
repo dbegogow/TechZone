@@ -30,6 +30,13 @@ namespace TechZoneAPI.Data.Models
 
         public bool IsArchive { get; set; }
 
+        public bool IsDeleted { get; set; }
+
+        [Required]
+        public string CategoryId { get; set; }
+
+        public Category Category { get; set; }
+
         public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
 
         public ICollection<Image> Images { get; init; } = new HashSet<Image>();
