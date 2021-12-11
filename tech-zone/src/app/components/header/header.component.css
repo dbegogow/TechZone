@@ -5,6 +5,12 @@
     width: 100%;
     height: 65px;
     background: #DB232A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    display: inline-block;
 }
 
 .container .logo {
@@ -51,7 +57,6 @@
 
 .contacts-container {
     display: inline-block;
-    margin-left: 18vw;
     position: relative;
     top: 13px;
     height: 40px;
@@ -81,4 +86,28 @@
     text-transform: uppercase;
     font-size: 1.1rem;
     margin-left: 10px;
+}
+
+.user-items-management {
+    display: inline-block;
+    margin-left: 30px;
+    color: #FFF;
+    position: relative;
+    top: 9px;
+    margin-right: 45px;
+}
+
+.user-items-management i {
+    font-size: 1.6rem;
+    margin-right: 13px;
+}
+
+.user-items-management span {
+    position: relative;
+    right: 10px;
+    bottom: 15px;
+    border-radius: 50%;
+    padding: 2px 3px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
 }
