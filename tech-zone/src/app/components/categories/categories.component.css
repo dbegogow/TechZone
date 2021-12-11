@@ -7,11 +7,6 @@
     padding: 20px 15px;
 }
 
-.container div {
-    display: flex;
-    gap: 15px;
-}
-
 .container ul {
     margin: 0;
     list-style-type: none;
@@ -22,8 +17,14 @@
 
 .container ul li {
     margin-bottom: 22px;
+    display: flex;
+    gap: 17px;
 }
 
 .container ul li:last-child {
     margin-bottom: 0;
+}
+
+.container ul li i {
+    width: 20px;
 }
