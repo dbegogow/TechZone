@@ -16,3 +16,9 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
