@@ -1,6 +1,53 @@
 .container {
-    display: inline-block;
+    position: relative;
     margin-top: 90px;
-    height: 483px;
-    width: 77vw;
+    height: 500px;
+    width: 76vw;
+}
+
+.container img {
+    display: none;
+}
+
+.container img.active {
+    display: block;
+    -webkit-animation-name: active-slider-img;
+    -webkit-animation-duration: 2s;
+    animation-name: active-slider-img;
+    animation-duration: 2s;
+}
+
+@keyframes active-slider-img {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
+.container .btns-container {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #DB232A;
+    padding: 2px 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.container .btns-container .btn {
+    display: inline-block;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    background: #F0F0F0;
+}
+
+.container .btns-container .btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+.container .btns-container .btn.active {
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2.5px;
 }
