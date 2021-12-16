@@ -34,7 +34,7 @@
     border-top-right-radius: 6px;
 }
 
-.container .btns-container .btn {
+.container .btns-container div {
     display: inline-block;
     border-radius: 50%;
     height: 9px;
@@ -42,11 +42,11 @@
     background: #F0F0F0;
 }
 
-.container .btns-container .btn:not(:last-child) {
+.container .btns-container div:not(:last-child) {
     margin-right: 8px;
 }
 
-.container .btns-container .btn.active {
+.container .btns-container div.active {
     height: 4px;
     width: 4px;
     margin-bottom: 2.5px;

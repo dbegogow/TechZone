@@ -1,13 +1,25 @@
 <div class="container">
-    <img class="active" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-laptops-1589464856.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+    <img [ngClass]="{'active': activeImg === 0}"
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-laptops-1589464856.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
         alt="First Slider Image">
-    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-og-2021?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1630076508000"
+    <img [ngClass]="{'active': activeImg === 1}"
+        src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-og-2021?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1630076508000"
         alt="Second Slider Image">
+    <img [ngClass]="{'active': activeImg === 2}"
+        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2021_05/3430717/201124-tvs-commerce-2x1-mn-0925.jpg"
+        alt="Third Slider Image">
+    <img [ngClass]="{'active': activeImg === 3}"
+        src="https://mlvtgiqzoszz.i.optimole.com/Sb3K8mU-pixZ2O_t/w:1024/h:481/q:90/https://www.appliancecity.co.uk/wp-content/uploads/2021/07/width-height-of-american-fridge-freezer.jpg"
+        alt="Fourth Slider Image">
+    <img [ngClass]="{'active': activeImg === 4}"
+        src="https://thumbs.dreamstime.com/z/air-conditioner-isolated-white-45177310.jpg" alt="Fourth Slider Image"
+        alt="Fifth Slider Image">
 
     <div class="btns-container">
-        <div class="btn"></div>
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
+        <div [ngClass]="{'active': activeImg === 0}"></div>
+        <div [ngClass]="{'active': activeImg === 1}"></div>
+        <div [ngClass]="{'active': activeImg === 2}"></div>
+        <div [ngClass]="{'active': activeImg === 3}"></div>
+        <div [ngClass]="{'active': activeImg === 4}"></div>
     </div>
 </div>
