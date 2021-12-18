@@ -1,0 +1,33 @@
+.container {
+    width: 230px;
+    display: flex;
+    height: 100%;
+}
+
+.container .icon {
+    background: #DB232A;
+    border-radius: 50%;
+    padding: 13px;
+    margin-right: 10px;
+    color: #FFF;
+}
+
+.container .icon i {
+    font-size: 2.2rem;
+    position: relative;
+    top: 3px;
+}
+
+.container .title {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.container .title.centerTitle {
+    margin-top: 17px;
+}
+
+.container .title:hover {
+    cursor: pointer;
+    color: #DB232A;
+}
