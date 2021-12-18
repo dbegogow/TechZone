@@ -9,6 +9,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { InformationBarComponent } from './components/information-bar/information-bar.component';
 import { InformationBarButtonComponent } from './components/information-bar-button/information-bar-button.component';
 import { NewOffersComponent } from './components/new-offers/new-offers.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewOffersComponent } from './components/new-offers/new-offers.component
     SliderComponent,
     InformationBarComponent,
     InformationBarButtonComponent,
-    NewOffersComponent
+    NewOffersComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
