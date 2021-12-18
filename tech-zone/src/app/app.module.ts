@@ -8,6 +8,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { SliderComponent } from './components/slider/slider.component';
 import { InformationBarComponent } from './components/information-bar/information-bar.component';
 import { InformationBarButtonComponent } from './components/information-bar-button/information-bar-button.component';
+import { NewOffersComponent } from './components/new-offers/new-offers.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InformationBarButtonComponent } from './components/information-bar-butt
     CategoriesComponent,
     SliderComponent,
     InformationBarComponent,
-    InformationBarButtonComponent
+    InformationBarButtonComponent,
+    NewOffersComponent
   ],
   imports: [
     BrowserModule,
