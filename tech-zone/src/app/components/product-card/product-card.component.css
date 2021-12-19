@@ -1,8 +1,16 @@
 .container {
-    width: 220px;
-    height: 265px;
+    width: 230px;
+    height: 270px;
     display: block;
+    padding: 0 8px;
+    border: 1px solid #FFF;
 }
+
+.container:hover {
+    cursor: pointer;
+    border: 1px solid #c3c3c3;
+}
+
 .container .name {
     background: #FFF;
     height: 35px;
