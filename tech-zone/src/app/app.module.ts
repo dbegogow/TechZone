@@ -12,6 +12,7 @@ import { NewOffersComponent } from './components/new-offers/new-offers.component
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FooterInformationBarComponent } from './components/footer-information-bar/footer-information-bar.component';
 import { FooterInformationBarButtonComponent } from './components/footer-information-bar-button/footer-information-bar-button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterInformationBarButtonComponent } from './components/footer-informa
     NewOffersComponent,
     ProductCardComponent,
     FooterInformationBarComponent,
-    FooterInformationBarButtonComponent
+    FooterInformationBarButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

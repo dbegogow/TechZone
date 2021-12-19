@@ -47,6 +47,7 @@
     padding: 10px;
     font-size: 0.9rem;
     cursor: default;
+    border: none;
 }
 
 .container .search::placeholder {

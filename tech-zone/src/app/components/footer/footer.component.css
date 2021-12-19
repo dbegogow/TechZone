@@ -1,0 +1,48 @@
+.container {
+    margin: 10px 30px 0 30px;
+    background: #DB232A;
+    margin-bottom: 50px;
+}
+
+.container .subscribe-container {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    color: #FFF;
+}
+
+.container .subscribe-container .title {
+    margin-top: 33px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.container .subscribe-container .email-input {
+    outline: none;
+    height: 42px;
+    position: relative;
+    top: 27px;
+    width: 25vw;
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: default;
+    border: none;
+}
+
+.container .subscribe-container .email-input::placeholder {
+    color: #4B4B4B;
+}
+
+.container .subscribe-container i {
+    font-size: 2.5rem;
+    position: relative;
+    top: 28px;
+    right: 43px;
+}
+
+.container .subscribe-container .information {
+    margin-top: 39px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
