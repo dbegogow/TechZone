@@ -7,7 +7,7 @@
     background: #DB232A;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 5;
 }
 
 .container div {

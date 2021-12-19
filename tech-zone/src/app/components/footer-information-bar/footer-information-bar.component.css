@@ -1,0 +1,6 @@
+.container {
+    background: #F7F7F7;
+    margin: 0 30px 50px 30px;
+    display: flex;
+    justify-content: space-between;
+}

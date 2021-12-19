@@ -10,6 +10,8 @@ import { InformationBarComponent } from './components/header-information-bar/hea
 import { InformationBarButtonComponent } from './components/header-information-bar-button/header-information-bar-button.component';
 import { NewOffersComponent } from './components/new-offers/new-offers.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FooterInformationBarComponent } from './components/footer-information-bar/footer-information-bar.component';
+import { FooterInformationBarButtonComponent } from './components/footer-information-bar-button/footer-information-bar-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     InformationBarComponent,
     InformationBarButtonComponent,
     NewOffersComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    FooterInformationBarComponent,
+    FooterInformationBarButtonComponent
   ],
   imports: [
     BrowserModule,

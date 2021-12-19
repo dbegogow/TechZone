@@ -1,0 +1,42 @@
+.container {
+    width: 220px;
+    height: 250px;
+    background: #F7F7F7;
+}
+
+.container .icon {
+    color: #FFF;
+    background: #DB232A;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    top: 32px;
+    width: 140px;
+    height: 110px;
+    display: inline-block;
+    border-radius: 46%;
+}
+
+.container .icon i {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    font-size: 3rem;
+}
+
+.container .icon:hover {
+    width: 110px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+.container .title {
+    margin: 0;
+    position: relative;
+    top: 65px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    text-align: center;
+}
