@@ -1,8 +1,6 @@
 <div class="container">
     <a routerLink="/" class="icon">
-        <i class="fas fa-phone-alt"></i>
+        <i [ngClass]="buttonInfo.imgClass"></i>
     </a>
-    <h4 class="title">
-        Order by phone or Viber, get at home
-    </h4>
+    <a routerLink="/" class="title">{{ buttonInfo.title }}</a>
 </div>

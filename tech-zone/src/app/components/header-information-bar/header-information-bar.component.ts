@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header-information-bar.component.html',
   styleUrls: ['./header-information-bar.component.css']
 })
-export class InformationBarComponent implements OnInit {
-  data = [{
+export class HeaderInformationBarComponent implements OnInit {
+  buttonsData = [{
     title: 'Buy online and pick up from store',
     imgClass: 'fas fa-laptop-house',
     centerTitle: false

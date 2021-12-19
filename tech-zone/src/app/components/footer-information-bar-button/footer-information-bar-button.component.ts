@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FooterInformationBarButton } from '../../interfaces/informationBarButtons';
 
 @Component({
   selector: 'app-footer-information-bar-button',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-information-bar-button.component.css']
 })
 export class FooterInformationBarButtonComponent implements OnInit {
+  @Input() buttonInfo: FooterInformationBarButton;
 
   constructor() { }
 
