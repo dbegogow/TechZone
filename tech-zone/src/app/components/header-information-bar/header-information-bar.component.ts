@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-information-bar',
-  templateUrl: './information-bar.component.html',
-  styleUrls: ['./information-bar.component.css']
+  selector: 'app-header-information-bar',
+  templateUrl: './header-information-bar.component.html',
+  styleUrls: ['./header-information-bar.component.css']
 })
 export class InformationBarComponent implements OnInit {
   data = [{
