@@ -9,4 +9,16 @@
             If you subscribe, you agree to receive on your e-mail Technopolis special offers.
         </p>
     </div>
+    <div class="links-container">
+        <div *ngFor="let linksGroup of linksData">
+            <h3 class="title">{{ linksGroup.title }}</h3>
+            <ul>
+                <li *ngFor="let link of linksGroup.links">
+                    <a routerLink="link.path">
+                        {{ link.name }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

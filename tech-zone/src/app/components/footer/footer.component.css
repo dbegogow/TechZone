@@ -1,6 +1,5 @@
 .container {
     margin: 10px 30px 0 30px;
-    background: #DB232A;
     margin-bottom: 50px;
 }
 
@@ -9,6 +8,7 @@
     justify-content: space-around;
     height: 100px;
     color: #FFF;
+    background: #DB232A;
 }
 
 .container .subscribe-container .title {
@@ -46,3 +46,46 @@
     margin-bottom: 0;
     font-weight: 600;
 }
+
+.container .links-container {
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+}
+
+.links-container .title {
+    font-weight: 300;
+    font-size: 1.3rem ;
+}
+
+.links-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-container ul li a{
+    font-weight: 600;
+    color: #545454;
+    position: relative;
+}
+
+.links-container ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #DB232A;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .links-container ul li a:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
