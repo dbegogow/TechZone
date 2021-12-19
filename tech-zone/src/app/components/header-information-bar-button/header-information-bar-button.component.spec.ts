@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InformationBarButtonComponent } from './information-bar-button.component';
+import { InformationBarButtonComponent } from './header-information-bar-button.component';
 
 describe('InformationBarButtonComponent', () => {
   let component: InformationBarButtonComponent;
