@@ -15,9 +15,11 @@ import { FooterInformationBarComponent } from './components/footer-information-b
 import { FooterInformationBarButtonComponent } from './components/footer-information-bar-button/footer-information-bar-button.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { PickupFromStoreComponent } from './components/pickup-from-store/pickup-from-store.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  { path: 'pickup-from-store', component: PickupFromStoreComponent }
 ];
 
 @NgModule({
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     FooterInformationBarComponent,
     FooterInformationBarButtonComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PickupFromStoreComponent
   ],
   imports: [
     BrowserModule,

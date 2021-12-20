@@ -8,23 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class FooterInformationBarComponent implements OnInit {
   buttonsData = [{
     title: 'Order by phone or Viber, get at home',
-    imgClass: 'fas fa-phone-alt',
+    path: '/',
+    imgClass: 'fas fa-phone-alt'
   },
   {
     title: 'Working time',
-    imgClass: 'far fa-clock',
+    path: '/',
+    imgClass: 'far fa-clock'
   },
   {
     title: 'Gift ideas',
-    imgClass: 'fas fa-gifts',
+    path: '/',
+    imgClass: 'fas fa-gifts'
   },
   {
     title: 'Buy online and pick up from store',
-    imgClass: 'fas fa-laptop-house',
+    path: '/',
+    imgClass: 'fas fa-laptop-house'
   },
   {
     title: 'Transport to the entrance of the building',
-    imgClass: 'fas fa-truck',
+    path: '/',
+    imgClass: 'fas fa-truck'
   }];
 
   constructor() { }
