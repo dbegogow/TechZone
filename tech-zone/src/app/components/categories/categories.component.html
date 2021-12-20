@@ -90,23 +90,14 @@
             <h2>TV Video and Gaming</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">TV</a></li>
-                    <li><a routerLink="/">Soundbars</a></li>
-                    <li><a routerLink="/">Blu-Ray and DVD players</a></li>
-                    <li><a routerLink="/">Multimedia players</a></li>
-                    <li><a routerLink="/">Projectors and screens</a></li>
-                    <li><a routerLink="/">TV accessories</a></li>
-                    <li><a routerLink="/">Audio systems</a></li>
-                    <li><a routerLink="/">HI-FI components</a></li>
+                    <li *ngFor="let links of linksData.tvFirst">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a routerLink="/">Radio players</a></li>
-                    <li><a routerLink="/">Game Consoles</a></li>
-                    <li><a routerLink="/">Game console accessories</a></li>
-                    <li><a routerLink="/">Games</a></li>
-                    <li><a routerLink="/">PC Gaming</a></li>
-                    <li><a routerLink="/">PC Gaming accessories</a></li>
-                    <li><a routerLink="/">Musical instruments</a></li>
+                    <li *ngFor="let links of linksData.tvSecond">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -119,15 +110,9 @@
             <h2>Phones and tablets</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Mobile phones</a></li>
-                    <li><a routerLink="/">Tablets</a></li>
-                    <li><a routerLink="/">Smart watches</a></li>
-                    <li><a routerLink="/">Fitnes wrist</a></li>
-                    <li><a routerLink="/">True wireless headphones</a></li>
-                    <li><a routerLink="/">Headphones</a></li>
-                    <li><a routerLink="/">Accessories</a></li>
-                    <li><a routerLink="/">Bluetooth speakers</a></li>
-                    <li><a routerLink="/">Phones and PRMs</a></li>
+                    <li *ngFor="let links of linksData.phones">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -140,17 +125,9 @@
             <h2>Photo and Video</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">DSLR cameras</a></li>
-                    <li><a routerLink="/">Mirrorless cameras</a></li>
-                    <li><a routerLink="/">Compacts cameras</a></li>
-                    <li><a routerLink="/">Instant digital cameras and consumables</a></li>
-                    <li><a routerLink="/">Lenses</a></li>
-                    <li><a routerLink="/">Flashes</a></li>
-                    <li><a routerLink="/">Camcoders</a></li>
-                    <li><a routerLink="/">Memory cards</a></li>
-                    <li><a routerLink="/">Photo printers and scanners</a></li>
-                    <li><a routerLink="/">Binoculars and telescopes</a></li>
-                    <li><a routerLink="/">Photo and video accessories</a></li>
+                    <li *ngFor="let links of linksData.photos">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -163,14 +140,9 @@
             <h2>Auto and GPS</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">GPS navigations</a></li>
-                    <li><a routerLink="/">GPS accessories</a></li>
-                    <li><a routerLink="/">Car receivers</a></li>
-                    <li><a routerLink="/">Car speakers</a></li>
-                    <li><a routerLink="/">Amplifiers</a></li>
-                    <li><a routerLink="/">FM transmitters</a></li>
-                    <li><a routerLink="/">Dashcam</a></li>
-                    <li><a routerLink="/">Auto bulbs</a></li>
+                    <li *ngFor="let links of linksData.gps">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -183,18 +155,9 @@
             <h2>PC peripherials</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Laptops</a></li>
-                    <li><a routerLink="/">Desktops</a></li>
-                    <li><a routerLink="/">PC components</a></li>
-                    <li><a routerLink="/">Monitors</a></li>
-                    <li><a routerLink="/">Printers And Scaners</a></li>
-                    <li><a routerLink="/">Ebook readers and accessories</a></li>
-                    <li><a routerLink="/">PC Gaming</a></li>
-                    <li><a routerLink="/">PC Gaming accessories</a></li>
-                    <li><a routerLink="/">Game Consoles</a></li>
-                    <li><a routerLink="/">Game console accessories</a></li>
-                    <li><a routerLink="/">Games</a></li>
-                    <li><a routerLink="/">PC Software</a></li>
+                    <li *ngFor="let links of linksData.pcPeripheria">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -207,27 +170,14 @@
             <h2>IT accessories</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Wi-Fi Adaptors</a></li>
-                    <li><a routerLink="/">Mice And Keyboards</a></li>
-                    <li><a routerLink="/">Headphones And Microphones</a></li>
-                    <li><a routerLink="/">Web Cams</a></li>
-                    <li><a routerLink="/">PC Speakers</a></li>
-                    <li><a routerLink="/">HDD</a></li>
-                    <li><a routerLink="/">USB memory sticks</a></li>
-                    <li><a routerLink="/">Laptop bags</a></li>
-                    <li><a routerLink="/">Charging adaptors for laptops</a></li>
-                    <li><a routerLink="/">Office Furniture</a></li>
+                    <li *ngFor="let links of linksData.itAccessoriesFirst">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a routerLink="/">Joysticks And Wheels</a></li>
-                    <li><a routerLink="/">Cooling pads</a></li>
-                    <li><a routerLink="/">Optical Drives</a></li>
-                    <li><a routerLink="/">PC Cables</a></li>
-                    <li><a routerLink="/">PC Cleaning</a></li>
-                    <li><a routerLink="/">Surge protectors</a></li>
-                    <li><a routerLink="/">CD and DVD discs</a></li>
-                    <li><a routerLink="/">CMP Accessories</a></li>
-                    <li><a routerLink="/">PC Gaming accessories</a></li>
+                    <li *ngFor="let links of linksData.itAccessoriesSecond">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -240,28 +190,14 @@
             <h2>Outdoors and sports</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Acton cameras</a></li>
-                    <li><a routerLink="/">Accessories for action cameras</a></li>
-                    <li><a routerLink="/">Drones and accessories</a></li>
-                    <li><a routerLink="/">Robots</a></li>
-                    <li><a routerLink="/">Electric vehicles</a></li>
-                    <li><a routerLink="/">Bikes and bike accessories</a></li>
-                    <li><a routerLink="/">Cross Trainers</a></li>
-                    <li><a routerLink="/">Home Trainers</a></li>
-                    <li><a routerLink="/">Treadmill</a></li>
-                    <li><a routerLink="/">Fitness Wrists</a></li>
+                    <li *ngFor="let links of linksData.sportsFirst">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a routerLink="/">Binoculars and telescopes</a></li>
-                    <li><a routerLink="/">Torches</a></li>
-                    <li><a routerLink="/">MP3 and MP4 players</a></li>
-                    <li><a routerLink="/">Headphones and microphones</a></li>
-                    <li><a routerLink="/">Bluetooth speakers</a></li>
-                    <li><a routerLink="/">Radios</a></li>
-                    <li><a routerLink="/">Musical instruments</a></li>
-                    <li><a routerLink="/">Voice recorders</a></li>
-                    <li><a routerLink="/">Books</a></li>
-                    <li><a routerLink="/">Gift Cards</a></li>
+                    <li *ngFor="let links of linksData.sportsSecond">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -274,26 +210,14 @@
             <h2>Home and garden</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Smart home</a></li>
-                    <li><a routerLink="/">Electric bulbs</a></li>
-                    <li><a routerLink="/">Digital photo frames</a></li>
-                    <li><a routerLink="/">Radio clocks</a></li>
-                    <li><a routerLink="/">Radios</a></li>
-                    <li><a routerLink="/">Meteo Stations</a></li>
-                    <li><a routerLink="/">Distribution panels</a></li>
-                    <li><a routerLink="/">Torches</a></li>
-                    <li><a routerLink="/">Batteries & Chargers</a></li>
+                    <li *ngFor="let links of linksData.homeFirst">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a routerLink="/">Garden tools</a></li>
-                    <li><a routerLink="/">Drill machines</a></li>
-                    <li><a routerLink="/">Multi tools and accessories</a></li>
-                    <li><a routerLink="/">Grinders</a></li>
-                    <li><a routerLink="/">Electrical screwdrivers</a></li>
-                    <li><a routerLink="/">Saws, circular saws and planers</a></li>
-                    <li><a routerLink="/">Hand tools</a></li>
-                    <li><a routerLink="/">Screwdriverbits</a></li>
-                    <li><a routerLink="/">Saves, metal boxes and padlocks</a></li>
+                    <li *ngFor="let links of linksData.homeSecond">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -306,17 +230,9 @@
             <h2>Small domestic appliances</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Air treatment</a></li>
-                    <li><a routerLink="/">Vacuum Cleaners</a></li>
-                    <li><a routerLink="/">Coffee makers and automats</a></li>
-                    <li><a routerLink="/">Kitchen Appliances</a></li>
-                    <li><a routerLink="/">Microwave ovens</a></li>
-                    <li><a routerLink="/">Body Appliances</a></li>
-                    <li><a routerLink="/">Health care</a></li>
-                    <li><a routerLink="/">Baby Care</a></li>
-                    <li><a routerLink="/">Ironing</a></li>
-                    <li><a routerLink="/">Sewing Machines</a></li>
-                    <li><a routerLink="/">Water pressure cleaners and steam cleaners</a></li>
+                    <li *ngFor="let links of linksData.domestics">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -329,10 +245,9 @@
             <h2>Air conditioners and heaters</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Inverter</a></li>
-                    <li><a routerLink="/">Portable AC</a></li>
-                    <li><a routerLink="/">Fans</a></li>
-                    <li><a routerLink="/">Heaters</a></li>
+                    <li *ngFor="let links of linksData.air">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -345,16 +260,9 @@
             <h2>Home appliances</h2>
             <div>
                 <ul>
-                    <li><a routerLink="/">Washing machines</a></li>
-                    <li><a routerLink="/">Dryers</a></li>
-                    <li><a routerLink="/">Refrigerators</a></li>
-                    <li><a routerLink="/">Freezers</a></li>
-                    <li><a routerLink="/">Dishwashers</a></li>
-                    <li><a routerLink="/">Cookers</a></li>
-                    <li><a routerLink="/">Water Heaters</a></li>
-                    <li><a routerLink="/">Hoods</a></li>
-                    <li><a routerLink="/">Built-In Appliances</a></li>
-                    <li><a routerLink="/">Accessories</a></li>
+                    <li *ngFor="let links of linksData.appliances">
+                        <a routerLink="links.path">{{ links.name }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
