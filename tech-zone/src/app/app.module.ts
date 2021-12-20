@@ -16,6 +16,7 @@ import { FooterInformationBarButtonComponent } from './components/footer-informa
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PickupFromStoreComponent } from './components/pickup-from-store/pickup-from-store.component';
+import { PickupHowWorksComponent } from './components/pickup-how-works/pickup-how-works.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     FooterInformationBarButtonComponent,
     FooterComponent,
     HomeComponent,
-    PickupFromStoreComponent
+    PickupFromStoreComponent,
+    PickupHowWorksComponent,
   ],
   imports: [
     BrowserModule,
