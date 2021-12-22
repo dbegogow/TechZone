@@ -1,0 +1,16 @@
+.container {
+    padding: 60px 30px 70px 30px;
+}
+
+.container .title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 35px;
+}
+
+.container .text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 2rem;
+}

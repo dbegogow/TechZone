@@ -14,7 +14,7 @@ export class HeaderInformationBarComponent implements OnInit {
   },
   {
     title: 'Extended warranty insurance',
-    path: '/',
+    path: '/extended-warranty',
     imgClass: 'fas fa-sort-amount-up-alt',
     centerTitle: false
   },

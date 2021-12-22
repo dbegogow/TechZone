@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    border: 1px solid #979797;
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div .title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.container div i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 3px;
+}
+
+.container .text {
+    display: none;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
