@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="login-container">
+    <div class="form-container">
         <h2>Login</h2>
         <p>I'm already your client</p>
         <form class="form">
@@ -11,10 +11,24 @@
                 <label for="password">Password</label>
                 <input type="password" name="password">
             </div>
+            <input type="checkbox" name="remember">
+            <label for="remember">Remember me</label>
+            <a routerLink="/">Forgotten password?</a>
+            <input type="submit" value="Login">
         </form>
     </div>
-    <div class="register-container">
+    <div class="form-container">
         <h2>Register</h2>
         <p>I'm new customer</p>
+        <p>If you're a new client please register so you can order our products.</p>
+        <p>By providing an E-mail address and password you'll create your personal user account, which besides the
+            ability to shop will provide you with access to additional functionalities such as:</p>
+        <ul>
+            <li>Archive of orders</li>
+            <li>Personalization</li>
+            <li>Review of sent orders and tracking an order</li>
+            <li>Saving carts with products</li>
+        </ul>
+        <a routerLink="/register" class="btn-register">Register</a>
     </div>
 </div>

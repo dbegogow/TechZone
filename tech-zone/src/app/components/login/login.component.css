@@ -1,52 +1,121 @@
 .container {
-    padding: 180px 200px 40px 200px;
+    padding: 130px 200px 40px 200px;
     display: flex;
     justify-content: space-between;
     height: 700px;
     font-weight: 600;
 }
 
-.container .login-container {
+.container .form-container {
     width: 100%;
 }
 
-.container .login-container h2 {
+.container .form-container:not(:last-child) {
+    border-right: 1px solid #D6D6D6;
+}
+
+.container .form-container h2 {
     margin-top: 30px;
-    margin-bottom: 15px;
     font-size: 1.9rem;
     font-weight: 300;
     padding-left: 150px;
 }
 
-.container .login-container p {
+.container .form-container p {
     margin: 0;
     padding-left: 150px;
     font-size: 1.1rem;
+    margin-top: 10px    ;
 }
 
-.container .login-container .form {
+.container .form-container .form {
     padding-left: 150px;
     margin-top: 50px;
 }
 
-.container .login-container .form .form-control {
+.container .form-container .form .form-control {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.container .login-container .form .form-control label {
+.container .form-container .form .form-control label {
     margin-bottom: 7px;
 }
 
-.container .login-container .form .form-control input {
+.container .form-container .form .form-control input {
     height: 40px;
     outline: none;
     cursor: default;
     padding: 5px 10px;
     font-size: 1rem;
+    width: 280px;
+    border: 1px solid #969696;
 }
 
-.container .register-container {
-    width: 100%;
+.container .form-container .form input[name=remember] {
+    width: 18px;
+    height: 18px;
+}
+
+.container .form-container .form label[for=remember] {
+    font-size: 1rem;
+    position: relative;
+    bottom: 4px;
+    margin-right: 35px;
+}
+
+.container .form-container .form a {
+    position: relative;
+    bottom: 4px;
+    color: #DB232A;
+}
+
+.container .form-container .form input[type=submit]{
+    display: block;
+    margin-top: 50px;
+    width: 280px;
+    height: 47px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FFF;
+    background: #DB232A;
+    border: none;
+}
+
+.container .form-container ul {
+    padding-left: 181px;
+    font-weight: 300;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 26px;
+}
+
+.container .form-container ul li {
+    margin-bottom: -10px;
+}
+
+.container .form-container ul li::before {
+    content: "\2022";
+    color: #DB232A;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 2rem;
+    position: relative;
+    top: 6px;
+}
+
+.container .form-container .btn-register {
+    background: #DB232A;
+    color: #FFF;
+    display: block;
+    width: 280px;
+    height: 47px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 180px;
+    padding-top: 14px;
 }
