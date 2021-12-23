@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HeaderInformationBarButton } from '../../interfaces/informationBarButtons';
+import { HeaderInformationBarButton } from '../../../../interfaces/informationBarButtons';
 
 @Component({
   selector: 'app-header-information-bar-button',
