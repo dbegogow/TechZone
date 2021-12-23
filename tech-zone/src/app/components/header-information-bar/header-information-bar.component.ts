@@ -26,7 +26,7 @@ export class HeaderInformationBarComponent implements OnInit {
   },
   {
     title: 'Gift ideas',
-    path: '/',
+    path: '/gift-ideas',
     imgClass: 'fas fa-gifts',
     centerTitle: true
   },

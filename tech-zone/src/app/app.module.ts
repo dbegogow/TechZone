@@ -23,12 +23,14 @@ import { QuestionComponent } from './components/question/question.component';
 import { WarrantyTableComponent } from './components/warranty-table/warranty-table.component';
 import { SmartCareComponent } from './components/smart-care/smart-care.component';
 import { SmartCareTableComponent } from './components/smart-care-table/smart-care-table.component';
+import { GiftIdeasComponent } from './components/gift-ideas/gift-ideas.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'pickup-from-store', component: PickupFromStoreComponent },
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
-  { path: 'smart-care', component: SmartCareComponent }
+  { path: 'smart-care', component: SmartCareComponent },
+  { path: 'gift-ideas', component: GiftIdeasComponent }
 ];
 
 @NgModule({
@@ -53,6 +55,7 @@ const appRoutes: Routes = [
     WarrantyTableComponent,
     SmartCareComponent,
     SmartCareTableComponent,
+    GiftIdeasComponent,
   ],
   imports: [
     BrowserModule,
