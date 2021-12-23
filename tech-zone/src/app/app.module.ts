@@ -22,6 +22,7 @@ import { FrequentlyAskedQuestionsComponent } from './components/frequently-asked
 import { QuestionComponent } from './components/question/question.component';
 import { WarrantyTableComponent } from './components/warranty-table/warranty-table.component';
 import { SmartCareComponent } from './components/smart-care/smart-care.component';
+import { SmartCareTableComponent } from './components/smart-care-table/smart-care-table.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -51,6 +52,7 @@ const appRoutes: Routes = [
     QuestionComponent,
     WarrantyTableComponent,
     SmartCareComponent,
+    SmartCareTableComponent,
   ],
   imports: [
     BrowserModule,

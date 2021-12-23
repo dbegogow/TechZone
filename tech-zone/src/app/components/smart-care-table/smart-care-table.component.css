@@ -1,0 +1,28 @@
+.container {
+    margin: 50px 30px 10px 30px;
+}
+
+.container table {
+    border-collapse: separate; 
+    border-spacing: 0;
+    width: 425px;
+}
+
+.container table thead tr th {
+    text-align: left;
+    border-bottom: 1px solid #DB232A;
+    padding: 10px 10px;
+}
+
+.container table tbody tr td {
+    padding: 15px 10px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.225;
+    border-top: 1px solid #D6D6D6;
+    text-align: left;
+}
+
+.container table tbody tr:nth-child(even) {
+    background: #EEE;
+}

@@ -60,3 +60,9 @@
     font-size: 1.8rem;
     margin-top: 40px;
 }
+
+.container .tables-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
