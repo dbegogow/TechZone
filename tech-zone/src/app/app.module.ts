@@ -20,6 +20,7 @@ import { PickupHowWorksComponent } from './components/pickup-how-works/pickup-ho
 import { ExtendedWarrantyComponent } from './components/extended-warranty/extended-warranty.component';
 import { FrequentlyAskedQuestionsComponent } from './components/frequently-asked-questions/frequently-asked-questions.component';
 import { QuestionComponent } from './components/question/question.component';
+import { WarrantyTableComponent } from './components/warranty-table/warranty-table.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     ExtendedWarrantyComponent,
     FrequentlyAskedQuestionsComponent,
     QuestionComponent,
+    WarrantyTableComponent,
   ],
   imports: [
     BrowserModule,
