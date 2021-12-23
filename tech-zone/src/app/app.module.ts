@@ -24,13 +24,16 @@ import { WarrantyTableComponent } from './components/extended-warranty/warranty-
 import { SmartCareComponent } from './components/smart-care/smart-care.component';
 import { SmartCareTableComponent } from './components/smart-care/smart-care-table/smart-care-table.component';
 import { GiftIdeasComponent } from './components/gift-ideas/gift-ideas.component';
+import { TransportComponent } from './components/transport/transport.component';
+import { TransportTableComponent } from './components/transport/transport-table/transport-table.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'pickup-from-store', component: PickupFromStoreComponent },
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
   { path: 'smart-care', component: SmartCareComponent },
-  { path: 'gift-ideas', component: GiftIdeasComponent }
+  { path: 'gift-ideas', component: GiftIdeasComponent },
+  { path: 'transport', component: TransportComponent }
 ];
 
 @NgModule({
@@ -56,6 +59,8 @@ const appRoutes: Routes = [
     SmartCareComponent,
     SmartCareTableComponent,
     GiftIdeasComponent,
+    TransportComponent,
+    TransportTableComponent,
   ],
   imports: [
     BrowserModule,

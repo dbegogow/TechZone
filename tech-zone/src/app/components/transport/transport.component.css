@@ -1,0 +1,47 @@
+.container {
+    padding: 80px 30px 70px 30px;
+}
+
+.container .title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.9rem;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 30px;
+}
+
+.container .text {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 40px;
+    line-height: 1.7rem;
+}
+
+.container .text span {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.container .section {
+    margin-top: 30px;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+    padding: 30px 0;
+}
+
+.container .section .section-title {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.container .section .list {
+    padding-left: 15px;
+}
+
+.container .section .list li {
+    font-weight: 600;
+}
+
+.container .section .list li:not(:last-child) {
+    margin-bottom: 10px;
+}

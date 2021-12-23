@@ -32,7 +32,7 @@ export class HeaderInformationBarComponent implements OnInit {
   },
   {
     title: 'Transport to the entrance of the building',
-    path: '/',
+    path: '/transport',
     imgClass: 'fas fa-truck',
     centerTitle: false
   }];
