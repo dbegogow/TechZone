@@ -1,10 +1,9 @@
 <div class="container">
     <div>
         <h4 class="title">What is the "TECHZONE Extended Warranty" insurance?</h4>
-        <i class="fas fa-chevron-up"></i>
-        <i class="fas fa-chevron-down"></i>
+        <i [ngClass]="{'rotate': isOpen}" class="fas fa-chevron-down" (click)="toggleText()"></i>
     </div>
-    <p class="text">The "TECHZONE Extended Warranty" insurance provides longer protection of the appliance you have
+    <p *ngIf="isOpen" class="text">The "TECHZONE Extended Warranty" insurance provides longer protection of the appliance you have
         purchased from TECHNOPOLIS. If the average manufacturer's warranty is 2 years, you can prudently extend its
         period to up to 5 years by using the extended warranty of TECHNOPOLIS. During the period, in which you are
         protected with the extended warranty of TECHZONE, the insurer "Allianz Bulgaria" Insurance Company will pay

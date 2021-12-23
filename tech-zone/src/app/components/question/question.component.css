@@ -19,11 +19,19 @@
 .container div i {
     font-size: 1.5rem;
     position: relative;
-    top: 3px;
+    top: 2px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.container div i.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+
+
 .container .text {
-    display: none;
     font-size: 1.1rem;
     line-height: 1.5rem;
 }

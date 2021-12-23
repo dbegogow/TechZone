@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
+  isOpen = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleText() {
+    this.isOpen
+      ? this.isOpen = false
+      : this.isOpen = true;
+  }
 }
