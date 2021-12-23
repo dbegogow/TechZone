@@ -1,0 +1,80 @@
+.container {
+    padding: 80px 30px 70px 30px;
+}
+
+.container .title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.9rem;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 30px;
+}
+
+.container .section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container .section .img-container {
+    width: 470px;
+    height: 590px;
+    position: relative;
+}
+
+.container .section .img-container .link-btn-container {
+    padding: 75px 0 52px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.125;
+    text-align: center;
+}
+
+.container .section .img-container .link-btn-container p {
+    position: relative;
+}
+
+.container .section .img-container .link-btn-container .link::after {
+    content: '\A';
+    height: 480px;
+    width: 260px;
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    margin-left: -60px;
+    background: #1151cb;
+    border-radius: 400px;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    z-index: 1;
+}
+
+.container .section .img-container .link-btn-container .link a {
+    min-width: 160px;
+    margin-top: 20px;
+    padding: 12px 32px;
+    background: 0 0;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.container .section .img-container .link-btn-container .link a:hover {
+    background: #FFF;
+    color: #000;
+    transition: 0.2s ease-out;
+}
+
+.container .section .img-container .link-btn-container .text {
+    z-index: 2;
+    font-size: 2.1rem;
+}
