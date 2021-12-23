@@ -20,7 +20,7 @@ export class HeaderInformationBarComponent implements OnInit {
   },
   {
     title: 'Smart Care',
-    path: '/',
+    path: '/smart-care',
     imgClass: 'fas fa-caret-square-up',
     centerTitle: true
   },

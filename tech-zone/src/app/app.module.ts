@@ -21,11 +21,13 @@ import { ExtendedWarrantyComponent } from './components/extended-warranty/extend
 import { FrequentlyAskedQuestionsComponent } from './components/frequently-asked-questions/frequently-asked-questions.component';
 import { QuestionComponent } from './components/question/question.component';
 import { WarrantyTableComponent } from './components/warranty-table/warranty-table.component';
+import { SmartCareComponent } from './components/smart-care/smart-care.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'pickup-from-store', component: PickupFromStoreComponent },
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
+  { path: 'smart-care', component: SmartCareComponent }
 ];
 
 @NgModule({
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
     FrequentlyAskedQuestionsComponent,
     QuestionComponent,
     WarrantyTableComponent,
+    SmartCareComponent,
   ],
   imports: [
     BrowserModule,

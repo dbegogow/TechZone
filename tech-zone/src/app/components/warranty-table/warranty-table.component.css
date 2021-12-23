@@ -23,6 +23,6 @@
     text-align: left;
 }
 
-.container table tbody tr:nth-child(odd) {
+.container table tbody tr:nth-child(even) {
     background: #EEE;
 }

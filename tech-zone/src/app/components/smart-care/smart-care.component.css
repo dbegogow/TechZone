@@ -1,0 +1,62 @@
+.container {
+    padding: 120px 30px 70px 30px;
+}
+
+.container .img-container {
+    height: 315px;
+    border-bottom: 1px solid #000;
+}
+
+.container h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.container .title-first {
+    margin: 50px 0;
+    font-size: 1.4rem;
+}
+
+.container .title-second-container {
+    background: #1BC818;
+    padding: 25px 0;
+}
+
+.container .title-second-container .title-third {
+    margin-bottom: 8px;
+    color: #FFF;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+
+.container .title-second-container .title-fourth {
+    font-size: 1.5rem;
+    color: #10690F;
+}
+
+.container .list {
+    margin-top: 80px;
+    font-size: 1.2rem;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.container .list li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.container .list li::before {
+    content: "\2022";
+    color: #DB232A;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.container .title-fifth {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
