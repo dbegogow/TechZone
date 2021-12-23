@@ -1,0 +1,52 @@
+.container {
+    padding: 180px 200px 40px 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    font-weight: 600;
+}
+
+.container .login-container {
+    width: 100%;
+}
+
+.container .login-container h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-left: 150px;
+}
+
+.container .login-container p {
+    margin: 0;
+    padding-left: 150px;
+    font-size: 1.1rem;
+}
+
+.container .login-container .form {
+    padding-left: 150px;
+    margin-top: 50px;
+}
+
+.container .login-container .form .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container .login-container .form .form-control label {
+    margin-bottom: 7px;
+}
+
+.container .login-container .form .form-control input {
+    height: 40px;
+    outline: none;
+    cursor: default;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.container .register-container {
+    width: 100%;
+}

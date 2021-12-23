@@ -26,6 +26,7 @@ import { SmartCareTableComponent } from './components/smart-care/smart-care-tabl
 import { GiftIdeasComponent } from './components/gift-ideas/gift-ideas.component';
 import { TransportComponent } from './components/transport/transport.component';
 import { TransportTableComponent } from './components/transport/transport-table/transport-table.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
   { path: 'smart-care', component: SmartCareComponent },
   { path: 'gift-ideas', component: GiftIdeasComponent },
-  { path: 'transport', component: TransportComponent }
+  { path: 'transport', component: TransportComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
@@ -61,6 +63,7 @@ const appRoutes: Routes = [
     GiftIdeasComponent,
     TransportComponent,
     TransportTableComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
