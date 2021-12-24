@@ -83,6 +83,12 @@
     border: none;
 }
 
+.container .form-container .form input[type=submit]:hover {
+    background: #C91118;
+    cursor: pointer;
+}
+
+
 .container .form-container ul {
     padding-left: 181px;
     font-weight: 300;
@@ -118,4 +124,8 @@
     text-align: center;
     margin-left: 180px;
     padding-top: 14px;
+}
+
+.container .form-container .btn-register:hover {
+    background: #C91118;
 }

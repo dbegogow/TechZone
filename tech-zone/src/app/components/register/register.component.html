@@ -1,0 +1,41 @@
+<div class="container">
+    <h2 class="title">Register</h2>
+    <p class="text">Customer information</p>
+    <form class="form">
+        <div class="form-row">
+            <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName">
+            </div>
+            <div class="form-control">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="email" name="eemail">
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-control">
+                <label for="repeatPassword">Repeat Password</label>
+                <input type="password" name="repeatPassword">
+            </div>
+        </div>
+        <p class="password-info">The minimum length must be 6 characters</p>
+        <div class="form-control btns">
+            <input type="submit" id="Save" class="btn submit">
+            <a routerLink="/login" class="btn">Refusal</a>
+        </div>
+    </form>
+</div>

@@ -27,6 +27,7 @@ import { GiftIdeasComponent } from './components/gift-ideas/gift-ideas.component
 import { TransportComponent } from './components/transport/transport.component';
 import { TransportTableComponent } from './components/transport/transport-table/transport-table.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
   { path: 'smart-care', component: SmartCareComponent },
   { path: 'gift-ideas', component: GiftIdeasComponent },
   { path: 'transport', component: TransportComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({
@@ -63,7 +65,8 @@ const appRoutes: Routes = [
     GiftIdeasComponent,
     TransportComponent,
     TransportTableComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
