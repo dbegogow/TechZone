@@ -30,7 +30,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'pickup-from-store', component: PickupFromStoreComponent },
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
   { path: 'smart-care', component: SmartCareComponent },
