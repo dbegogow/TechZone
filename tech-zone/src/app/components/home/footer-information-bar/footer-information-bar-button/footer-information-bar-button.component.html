@@ -1,6 +1,6 @@
 <div class="container">
-    <a routerLink="/" class="icon">
+    <a [routerLink]="buttonInfo.path" class="icon">
         <i [ngClass]="buttonInfo.imgClass"></i>
     </a>
-    <a routerLink="/" class="title">{{ buttonInfo.title }}</a>
+    <a [routerLink]="buttonInfo.path" class="title">{{ buttonInfo.title }}</a>
 </div>

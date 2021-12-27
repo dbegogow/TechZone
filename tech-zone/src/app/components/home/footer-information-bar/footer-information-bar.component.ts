@@ -18,17 +18,17 @@ export class FooterInformationBarComponent implements OnInit {
   },
   {
     title: 'Gift ideas',
-    path: '/',
+    path: '/gift-ideas',
     imgClass: 'fas fa-gifts'
   },
   {
     title: 'Buy online and pick up from store',
-    path: '/',
+    path: '/pickup-from-store',
     imgClass: 'fas fa-laptop-house'
   },
   {
     title: 'Transport to the entrance of the building',
-    path: '/',
+    path: '/transport',
     imgClass: 'fas fa-truck'
   }];
 
