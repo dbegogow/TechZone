@@ -1,0 +1,36 @@
+.container {
+    width: 250px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.container .title {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.container div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.container div i {
+    color: #DB232A;
+}
+
+.container div p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.container .working-time .fa-clock {
+    position: relative;
+    top: 10px;
+}
+
+.container .working-time .text {
+    display: flex;
+    flex-direction: column;
+}

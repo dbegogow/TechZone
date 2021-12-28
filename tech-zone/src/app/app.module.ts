@@ -31,6 +31,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { OrderByPhoneDiagramComponent } from './components/order-by-phone/order-by-phone-diagram/order-by-phone-diagram.component';
 import { OrderByPhoneTableComponent } from './components/order-by-phone/order-by-phone-table/order-by-phone-table.component';
+import { OrderByPhoneTableStoreComponent } from './components/order-by-phone/order-by-phone-table/order-by-phone-table-store/order-by-phone-table-store.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -74,7 +75,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     OrderByPhoneComponent,
     OrderByPhoneDiagramComponent,
-    OrderByPhoneTableComponent
+    OrderByPhoneTableComponent,
+    OrderByPhoneTableStoreComponent
   ],
   imports: [
     BrowserModule,

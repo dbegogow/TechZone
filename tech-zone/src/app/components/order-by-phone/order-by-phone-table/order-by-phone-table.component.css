@@ -1,0 +1,14 @@
+.container {
+    margin-top: 50px;
+}
+
+.container .title {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.container .table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+}
