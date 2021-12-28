@@ -32,6 +32,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { OrderByPhoneDiagramComponent } from './components/order-by-phone/order-by-phone-diagram/order-by-phone-diagram.component';
 import { StoresTableComponent } from './components/stores-table/stores-table.component';
 import { StoreComponent } from './components/stores-table/store/store.component';
+import { AboutComponent } from './components/about/about.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -42,6 +43,7 @@ const appRoutes: Routes = [
   { path: 'gift-ideas', component: GiftIdeasComponent },
   { path: 'transport', component: TransportComponent },
   { path: 'order-by-phone', component: OrderByPhoneComponent },
+  { path: 'about-us', component: AboutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }
 ];
@@ -76,7 +78,8 @@ const appRoutes: Routes = [
     OrderByPhoneComponent,
     OrderByPhoneDiagramComponent,
     StoresTableComponent,
-    StoreComponent
+    StoreComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

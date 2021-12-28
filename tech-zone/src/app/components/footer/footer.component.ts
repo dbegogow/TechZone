@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
       links: [
         {
           name: 'About Us',
-          path: '/'
+          path: '/about-us'
         },
         {
           name: 'Careers',

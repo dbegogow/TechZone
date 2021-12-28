@@ -14,7 +14,7 @@
             <h3 class="title">{{ linksGroup.title }}</h3>
             <ul>
                 <li *ngFor="let link of linksGroup.links">
-                    <a routerLink="link.path">
+                    <a [routerLink]="link.path">
                         {{ link.name }}
                     </a>
                 </li>
