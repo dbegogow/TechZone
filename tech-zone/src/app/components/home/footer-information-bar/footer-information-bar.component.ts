@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterInformationBarComponent implements OnInit {
   buttonsData = [{
     title: 'Order by phone or Viber, get at home',
-    path: '/',
+    path: '/order-by-phone',
     imgClass: 'fas fa-phone-alt'
   },
   {

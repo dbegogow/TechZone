@@ -1,0 +1,7 @@
+.container {
+    padding: 120px 30px 70px 30px;
+}
+
+.container .img-container {
+    height: 480px;
+}

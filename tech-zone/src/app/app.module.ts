@@ -26,6 +26,7 @@ import { SmartCareTableComponent } from './components/smart-care/smart-care-tabl
 import { GiftIdeasComponent } from './components/gift-ideas/gift-ideas.component';
 import { TransportComponent } from './components/transport/transport.component';
 import { TransportTableComponent } from './components/transport/transport-table/transport-table.component';
+import { OrderByPhoneComponent } from './components/order-by-phone/order-by-phone.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'smart-care', component: SmartCareComponent },
   { path: 'gift-ideas', component: GiftIdeasComponent },
   { path: 'transport', component: TransportComponent },
+  { path: 'order-by-phone', component: OrderByPhoneComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }
 ];
@@ -67,7 +69,8 @@ const appRoutes: Routes = [
     TransportComponent,
     TransportTableComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    OrderByPhoneComponent
   ],
   imports: [
     BrowserModule,
