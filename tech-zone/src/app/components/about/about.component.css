@@ -1,0 +1,28 @@
+.container {
+    padding: 90px 30px 50px 30px;
+}
+
+.container .main-container {
+    display: flex;
+}
+
+.container .img-container {
+    width: 800px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.container .title {
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+
+.container .main-container .text-container {
+    width: 700px;
+    height: 400px;
+}
+
+.container .text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
