@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DiagramComponent } from './diagram.component';
+import { OrderByPhoneTableComponent } from './order-by-phone-table.component';
 
-describe('DiagramComponent', () => {
-  let component: DiagramComponent;
-  let fixture: ComponentFixture<DiagramComponent>;
+describe('OrderByPhoneTableComponent', () => {
+  let component: OrderByPhoneTableComponent;
+  let fixture: ComponentFixture<OrderByPhoneTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DiagramComponent ]
+      declarations: [ OrderByPhoneTableComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DiagramComponent);
+    fixture = TestBed.createComponent(OrderByPhoneTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
