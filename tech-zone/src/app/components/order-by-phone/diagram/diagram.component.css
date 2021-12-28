@@ -1,0 +1,57 @@
+.container {
+    background: #F7F7F7;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.container .title {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 50px 0;
+}
+
+.container .diagram {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container .diagram .item {
+    width: 300px;
+}
+
+.container .diagram .item .logo i {
+    font-size: 4.5rem;
+    margin-left: 125px;
+}
+
+.container .diagram .item .text {
+    margin-top: 20px;
+}
+
+.container .diagram .item .text span {
+    background: #DB232A;
+    margin-right: 10px;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 5px 11px;
+    font-size: 1.2rem;
+    margin-left: 39px;
+    vertical-align: top;
+}
+
+
+.container .diagram .item .text h5 {
+    display: inline-block;
+    font-size: 1.1rem;
+    width: 200px;
+    margin: 0;
+}
+
+.container .diagram .next-step i {
+    position: relative;
+    top: 60px;
+    left: 115px;
+    font-size: 2.3rem;
+}

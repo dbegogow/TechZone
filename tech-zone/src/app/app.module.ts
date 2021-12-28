@@ -29,6 +29,7 @@ import { TransportTableComponent } from './components/transport/transport-table/
 import { OrderByPhoneComponent } from './components/order-by-phone/order-by-phone.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { DiagramComponent } from './components/order-by-phone/diagram/diagram.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -70,7 +71,8 @@ const appRoutes: Routes = [
     TransportTableComponent,
     LoginComponent,
     RegisterComponent,
-    OrderByPhoneComponent
+    OrderByPhoneComponent,
+    DiagramComponent
   ],
   imports: [
     BrowserModule,
