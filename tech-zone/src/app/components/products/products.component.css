@@ -16,6 +16,54 @@
 }
 
 .container .products-container .products {
-    background: lightgreen;
     width: 100%
+}
+
+.container .products-container .products .sorting {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .products-container .products .sorting .found {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    top: 7px;
+}
+
+.container .products-container .products .sorting .found span {
+    margin-left: 3px;
+    color: #DB232A;
+}
+
+.container .products-container .products .sorting .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container .products-container .products .sorting .btns h4 {
+    margin: 0;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    position: relative;
+    top: 7px;
+}
+
+.container .products-container .products .sorting .btns button {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    border: 1px solid #D6D6D6;
+    background: #D6D6D6;
+}
+
+.container .products-container .products .sorting .btns button:hover {
+    border: 1px solid #DB232A;
+    cursor: pointer;
+}
+
+.container .products-container .products .sorting .btns button i{
+    margin-left: 3px;
 }
