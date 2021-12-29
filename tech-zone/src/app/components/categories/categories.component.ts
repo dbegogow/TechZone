@@ -10,7 +10,7 @@ export class CategoriesComponent implements OnInit {
 
   linksData = {
     tvFirst: [
-      { name: 'TV', path: '/' },
+      { name: 'TV', path: '/products' },
       { name: 'Soundbars', path: '/' },
       { name: 'Blu-Ray and DVD players', path: '/' },
       { name: 'Multimedia players', path: '/' },

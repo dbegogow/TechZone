@@ -33,6 +33,7 @@ import { OrderByPhoneDiagramComponent } from './components/order-by-phone/order-
 import { StoresTableComponent } from './components/stores-table/stores-table.component';
 import { StoreComponent } from './components/stores-table/store/store.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
   { path: 'transport', component: TransportComponent },
   { path: 'order-by-phone', component: OrderByPhoneComponent },
   { path: 'about-us', component: AboutComponent },
+  { path: 'products', component: ProductsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }
 ];
@@ -79,7 +81,8 @@ const appRoutes: Routes = [
     OrderByPhoneDiagramComponent,
     StoresTableComponent,
     StoreComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
