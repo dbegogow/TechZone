@@ -1,0 +1,22 @@
+.container {
+    background: lightgoldenrodyellow;
+    width: 300px;
+}
+
+.container .title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.container .section .section-title {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container .section {
+    display: flex;
+    flex-direction: column;
+}

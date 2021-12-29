@@ -34,6 +34,7 @@ import { StoresTableComponent } from './components/stores-table/stores-table.com
 import { StoreComponent } from './components/stores-table/store/store.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
+import { FiltersComponent } from './components/products/filters/filters.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -82,7 +83,8 @@ const appRoutes: Routes = [
     StoresTableComponent,
     StoreComponent,
     AboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,

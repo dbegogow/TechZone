@@ -1,0 +1,21 @@
+.container {
+    padding: 90px 20px 20px 20px;
+}
+
+.container .title {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+
+.container .products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.container .products-container .products {
+    background: lightgreen;
+    width: 100%
+}
