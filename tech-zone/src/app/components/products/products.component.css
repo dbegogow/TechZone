@@ -67,3 +67,12 @@
 .container .products-container .products .sorting .btns button i{
     margin-left: 3px;
 }
+
+.container .products-container .products .cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 30px 0;
+}
