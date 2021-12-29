@@ -35,6 +35,7 @@ import { StoreComponent } from './components/stores-table/store/store.component'
 import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FiltersComponent } from './components/products/filters/filters.component';
+import { WorkingTimeComponent } from './components/working-time/working-time.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
   { path: 'transport', component: TransportComponent },
   { path: 'order-by-phone', component: OrderByPhoneComponent },
   { path: 'about-us', component: AboutComponent },
+  { path: 'working-time', component: WorkingTimeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }
@@ -84,7 +86,8 @@ const appRoutes: Routes = [
     StoreComponent,
     AboutComponent,
     ProductsComponent,
-    FiltersComponent
+    FiltersComponent,
+    WorkingTimeComponent
   ],
   imports: [
     BrowserModule,

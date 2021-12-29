@@ -13,7 +13,7 @@ export class FooterInformationBarComponent implements OnInit {
   },
   {
     title: 'Working time',
-    path: '/',
+    path: '/working-time',
     imgClass: 'far fa-clock'
   },
   {
