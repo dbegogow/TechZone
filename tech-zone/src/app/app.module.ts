@@ -37,7 +37,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { FiltersComponent } from './components/products/filters/filters.component';
 import { WorkingTimeComponent } from './components/working-time/working-time.component';
 import { AccountComponent } from './components/account/account.component';
-import { UnprocessedOrdersComponent } from './components/account/unprocessed-orders/unprocessed-orders.component';
+import { OrdersProcessingComponent } from './components/account/orders-processing/orders-processing.component';
 import { NoProductsComponent } from './components/account/no-products/no-products.component';
 
 const appRoutes: Routes = [
@@ -58,7 +58,7 @@ const appRoutes: Routes = [
     path: 'account',
     component: AccountComponent,
     children: [
-      { path: 'unprocessed-orders', component: UnprocessedOrdersComponent }
+      { path: 'unprocessed-orders', component: OrdersProcessingComponent }
     ]
   },
 ];
@@ -99,7 +99,7 @@ const appRoutes: Routes = [
     FiltersComponent,
     WorkingTimeComponent,
     AccountComponent,
-    UnprocessedOrdersComponent,
+    OrdersProcessingComponent,
     NoProductsComponent
   ],
   imports: [
