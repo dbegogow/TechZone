@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .img-container {
+    width: 180px;
+    height: 180px;
+}
+
+.container .title {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.container .price-container {
+    border: 1px solid #D6D6D6;
+    padding: 20px 15px;
+    font-size: 1.2rem;
+}
+
+.container .price-container .count {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #D6D6D6;
+}
+
+.container .price-container .price {
+    color: #DB232A;
+}

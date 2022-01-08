@@ -38,7 +38,8 @@ import { FiltersComponent } from './components/products/filters/filters.componen
 import { WorkingTimeComponent } from './components/working-time/working-time.component';
 import { AccountComponent } from './components/account/account.component';
 import { OrdersProcessingComponent } from './components/account/orders-processing/orders-processing.component';
-import { NoProductsComponent } from './components/account/no-products/no-products.component';
+import { NoProductsComponent } from './components/account/orders-processing/no-products/no-products.component';
+import { OrdersProcessingProductComponent } from './components/account/orders-processing/orders-processing-product/orders-processing-product.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -58,7 +59,8 @@ const appRoutes: Routes = [
     path: 'account',
     component: AccountComponent,
     children: [
-      { path: 'unprocessed-orders', component: OrdersProcessingComponent }
+      { path: 'unprocessed-orders', component: OrdersProcessingComponent },
+      { path: 'processed-orders', component: OrdersProcessingComponent }
     ]
   },
 ];
@@ -100,7 +102,8 @@ const appRoutes: Routes = [
     WorkingTimeComponent,
     AccountComponent,
     OrdersProcessingComponent,
-    NoProductsComponent
+    NoProductsComponent,
+    OrdersProcessingProductComponent
   ],
   imports: [
     BrowserModule,
