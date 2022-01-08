@@ -40,6 +40,8 @@ import { AccountComponent } from './components/account/account.component';
 import { OrdersProcessingComponent } from './components/account/orders-processing/orders-processing.component';
 import { NoProductsComponent } from './components/account/orders-processing/no-products/no-products.component';
 import { OrdersProcessingProductComponent } from './components/account/orders-processing/orders-processing-product/orders-processing-product.component';
+import { FavouriteProductsComponent } from './components/favourite-products/favourite-products.component';
+import { FavouriteProductComponent } from './components/favourite-products/favourite-product/favourite-product.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -53,6 +55,7 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutComponent },
   { path: 'working-time', component: WorkingTimeComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'favourites', component: FavouriteProductsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {
@@ -103,7 +106,9 @@ const appRoutes: Routes = [
     AccountComponent,
     OrdersProcessingComponent,
     NoProductsComponent,
-    OrdersProcessingProductComponent
+    OrdersProcessingProductComponent,
+    FavouriteProductsComponent,
+    FavouriteProductComponent
   ],
   imports: [
     BrowserModule,
