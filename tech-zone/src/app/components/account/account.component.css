@@ -1,0 +1,29 @@
+.container {
+    padding: 120px 80px 50px 80px;
+}
+
+.container .title {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.container .section-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #D6D6D6;
+    padding: 0 20px;
+}
+
+.container .section-btns a {
+    padding: 10px 25px;
+    position: relative;
+    top: 1px;
+}
+
+.container .section-btns a.opened {
+    border-bottom: 4px solid #CE2127;
+}

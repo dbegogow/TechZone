@@ -51,7 +51,8 @@ const appRoutes: Routes = [
   { path: 'working-time', component: WorkingTimeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
+  { path: 'account', component: AccountComponent }
 ];
 
 @NgModule({
