@@ -38,6 +38,7 @@ import { FiltersComponent } from './components/products/filters/filters.componen
 import { WorkingTimeComponent } from './components/working-time/working-time.component';
 import { AccountComponent } from './components/account/account.component';
 import { UnprocessedOrdersComponent } from './components/account/unprocessed-orders/unprocessed-orders.component';
+import { NoProductsComponent } from './components/account/no-products/no-products.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -98,7 +99,8 @@ const appRoutes: Routes = [
     FiltersComponent,
     WorkingTimeComponent,
     AccountComponent,
-    UnprocessedOrdersComponent
+    UnprocessedOrdersComponent,
+    NoProductsComponent
   ],
   imports: [
     BrowserModule,
