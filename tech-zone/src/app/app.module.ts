@@ -36,6 +36,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FiltersComponent } from './components/products/filters/filters.component';
 import { WorkingTimeComponent } from './components/working-time/working-time.component';
+import { AccountComponent } from './components/account/account.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -87,7 +88,8 @@ const appRoutes: Routes = [
     AboutComponent,
     ProductsComponent,
     FiltersComponent,
-    WorkingTimeComponent
+    WorkingTimeComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
