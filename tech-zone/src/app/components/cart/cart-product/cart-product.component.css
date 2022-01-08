@@ -39,6 +39,7 @@
 
 .container .price-container .count-container i {
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .container .price-container .count-container .count {
