@@ -1,11 +1,12 @@
 <div class="container">
    <h2 class="title">My account</h2>
-   <div class="section-btns">
-        <a class="opened" routerLink="/home">Unprocessed orders</a>
-        <a routerLink="/home">Processed orders</a>
-        <a routerLink="/home">Personal data</a>
-        <a routerLink="/home">Delivery data</a>
-        <a routerLink="/home">Data for invoice</a>
-        <a routerLink="/home">Change of password</a>
+   <div class="section-btns" (click)="openSection($event)">
+      <a class="opened" routerLink="/account/unprocessed-orders">Unprocessed orders</a>
+      <a routerLink="/account">Processed orders</a>
+      <a routerLink="/account">Personal data</a>
+      <a routerLink="/account">Delivery data</a>
+      <a routerLink="/account">Data for invoice</a>
+      <a routerLink="/account">Change of password</a>
    </div>
+   <router-outlet></router-outlet>
 </div>

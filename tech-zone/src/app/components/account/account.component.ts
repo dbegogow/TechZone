@@ -12,4 +12,22 @@ export class AccountComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openSection(e: any) {
+    const target = e.target;
+
+    if (target.localName !== 'a') {
+      return;
+    }
+
+    this.clearOpenSection(target);
+
+    target.classList.add("opened")
+  }
+
+  clearOpenSection(target: HTMLElement) {
+    const sectionBtns = target.parentElement;
+    const btns: HTMLElement[] = [].slice.call(sectionBtns?.children);
+
+    btns.forEach((btn) => btn.classList.remove('opened'));
+  }
 }

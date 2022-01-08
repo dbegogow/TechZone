@@ -37,6 +37,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { FiltersComponent } from './components/products/filters/filters.component';
 import { WorkingTimeComponent } from './components/working-time/working-time.component';
 import { AccountComponent } from './components/account/account.component';
+import { UnprocessedOrdersComponent } from './components/account/unprocessed-orders/unprocessed-orders.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -52,7 +53,13 @@ const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'account', component: AccountComponent }
+  {
+    path: 'account',
+    component: AccountComponent,
+    children: [
+      { path: 'unprocessed-orders', component: UnprocessedOrdersComponent }
+    ]
+  },
 ];
 
 @NgModule({
@@ -90,7 +97,8 @@ const appRoutes: Routes = [
     ProductsComponent,
     FiltersComponent,
     WorkingTimeComponent,
-    AccountComponent
+    AccountComponent,
+    UnprocessedOrdersComponent
   ],
   imports: [
     BrowserModule,
