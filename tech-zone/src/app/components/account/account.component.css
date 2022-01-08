@@ -19,11 +19,22 @@
 }
 
 .container .section-btns a {
-    padding: 10px 25px;
-    position: relative;
-    top: 1px;
+    padding-bottom: 10px;
+    width: 200px;
+    text-align: center;
 }
 
-.container .section-btns a.opened {
-    border-bottom: 4px solid #CE2127;
+.container .section-btns a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #CE2127;
+    display: block;
+    position: relative;
+    top: 11px;
+}
+
+.container .section-btns a.opened::after {
+    transition: 0.5s;
+    width: 100%;
 }
