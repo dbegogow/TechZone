@@ -44,6 +44,7 @@ import { FavouriteProductsComponent } from './components/favourite-products/favo
 import { FavouriteProductComponent } from './components/favourite-products/favourite-product/favourite-product.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CartProductComponent } from './components/cart/cart-product/cart-product.component';
+import { CompareProductsComponent } from './components/compare-products/compare-products.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -59,6 +60,7 @@ const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'favourites', component: FavouriteProductsComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'compare', component: CompareProductsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {
@@ -113,7 +115,8 @@ const appRoutes: Routes = [
     FavouriteProductsComponent,
     FavouriteProductComponent,
     CartComponent,
-    CartProductComponent
+    CartProductComponent,
+    CompareProductsComponent
   ],
   imports: [
     BrowserModule,
