@@ -1,0 +1,44 @@
+.container {
+    padding: 110px 30px 40px 30px;
+}
+
+.container .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .title-container .title {
+    font-weight: 300;
+    font-size: 1.9rem;
+}
+
+.container .title-container .fa-compress-alt {
+    font-size: 1.7rem;
+}
+
+.container .title-container .products-count {
+    position: relative;
+    bottom: 10px;
+    right: 13px;
+    color: #DB232A;
+    font-weight: 600;
+}
+
+.container .title-container .fa-trash-alt {
+    border-left: 1px solid #D6D6D6;
+    padding: 5px 0 5px 16px;
+    margin-left: -16px;
+    font-size: 1.4rem;
+}
+
+.container .title-container .remove-btn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #DB232A;
+    font-size: 1rem;
+    margin-top: 2px;
+    cursor: pointer;
+}
