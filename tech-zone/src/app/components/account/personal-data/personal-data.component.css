@@ -1,0 +1,72 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form .form-row {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.container .form .form-row .form-control {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.container .form .form-row .form-control input {
+    outline: none;
+    cursor: default;
+    border: 1px solid #969696;
+    height: 35px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    width: 330px;
+}
+
+.container .form .password-info {
+    margin-top: -15px;
+    font-size: 0.9rem;
+}
+
+.container .form .form-control.btns {
+    margin-top: 20px;
+}
+
+.container .form .form-control.btns .btn {
+    width: 280px;
+    height: 47px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.container .form .form-control.btns input{
+    margin-right: 50px;
+    background: #DB232A;
+}
+
+.container .form .form-control.btns input:hover {
+    background: #C91118;
+}
+
+.container .form .form-control.btns a {
+    background: #0947be;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 14px;
+    font-weight: 600;
+}
+
+.container .form .form-control.btns a:hover {
+    background: #0E44AA;
+}
