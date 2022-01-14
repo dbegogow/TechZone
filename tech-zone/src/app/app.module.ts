@@ -46,6 +46,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { CartProductComponent } from './components/cart/cart-product/cart-product.component';
 import { CompareProductsComponent } from './components/compare-products/compare-products.component';
 import { PersonalDataComponent } from './components/account/personal-data/personal-data.component';
+import { DeliveryAddressComponent } from './components/account/delivery-address/delivery-address.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -70,7 +71,8 @@ const appRoutes: Routes = [
     children: [
       { path: 'unprocessed-orders', component: OrdersProcessingComponent },
       { path: 'processed-orders', component: OrdersProcessingComponent },
-      { path: 'profile', component: PersonalDataComponent }
+      { path: 'profile', component: PersonalDataComponent },
+      { path: 'delivery-address', component: DeliveryAddressComponent },
     ]
   },
 ];
@@ -119,7 +121,8 @@ const appRoutes: Routes = [
     CartComponent,
     CartProductComponent,
     CompareProductsComponent,
-    PersonalDataComponent
+    PersonalDataComponent,
+    DeliveryAddressComponent
   ],
   imports: [
     BrowserModule,
