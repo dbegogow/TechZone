@@ -42,3 +42,21 @@
     margin-top: 2px;
     cursor: pointer;
 }
+
+.container .products .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.container .products .cards div button {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px 0;
+    background: #1151CB;
+    color: #FFF;
+    border: none;
+}
