@@ -38,6 +38,10 @@
     font-size: 1.05rem;
 }
 
+.container .form .form-row .form-control label span {
+    color: #DB232A;
+}
+
 .container .form .form-row .form-control input {
     outline: none;
     cursor: default;
