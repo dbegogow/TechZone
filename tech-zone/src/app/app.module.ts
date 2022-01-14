@@ -47,6 +47,7 @@ import { CartProductComponent } from './components/cart/cart-product/cart-produc
 import { CompareProductsComponent } from './components/compare-products/compare-products.component';
 import { PersonalDataComponent } from './components/account/personal-data/personal-data.component';
 import { DeliveryAddressComponent } from './components/account/delivery-address/delivery-address.component';
+import { UpdatePasswordComponent } from './components/account/update-password/update-password.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -73,6 +74,7 @@ const appRoutes: Routes = [
       { path: 'processed-orders', component: OrdersProcessingComponent },
       { path: 'profile', component: PersonalDataComponent },
       { path: 'delivery-address', component: DeliveryAddressComponent },
+      { path: 'update-password', component: UpdatePasswordComponent }
     ]
   },
 ];
@@ -122,7 +124,8 @@ const appRoutes: Routes = [
     CartProductComponent,
     CompareProductsComponent,
     PersonalDataComponent,
-    DeliveryAddressComponent
+    DeliveryAddressComponent,
+    UpdatePasswordComponent
   ],
   imports: [
     BrowserModule,
