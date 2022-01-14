@@ -48,7 +48,9 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 20px;
+}
+
+.container .products .cards div app-product-card {
     pointer-events: none;
 }
 
@@ -59,4 +61,32 @@
     background: #1151CB;
     color: #FFF;
     border: none;
+}
+
+.container .products .cards div button:hover {
+    cursor: pointer;
+    background: #114CBC;
+}
+
+.container .products .table {
+    margin-top: 50px;
+}
+
+.container .products .table .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.container .products .table .row span {
+    background: #E5E5E5;
+    width: 200px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+}
+
+.container .products .table .row span:not(:first-child) {
+    text-align: center;
 }
