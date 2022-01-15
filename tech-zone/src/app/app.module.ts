@@ -19,7 +19,6 @@ import { PickupFromStoreComponent } from './components/pickup-from-store/pickup-
 import { PickupHowWorksComponent } from './components/pickup-from-store/pickup-how-works/pickup-how-works.component';
 import { ExtendedWarrantyComponent } from './components/extended-warranty/extended-warranty.component';
 import { FrequentlyAskedQuestionsComponent } from './components/extended-warranty/frequently-asked-questions/frequently-asked-questions.component';
-import { QuestionComponent } from './components/extended-warranty/frequently-asked-questions/question/question.component';
 import { WarrantyTableComponent } from './components/extended-warranty/warranty-table/warranty-table.component';
 import { SmartCareComponent } from './components/smart-care/smart-care.component';
 import { SmartCareTableComponent } from './components/smart-care/smart-care-table/smart-care-table.component';
@@ -97,7 +96,6 @@ const appRoutes: Routes = [
     PickupHowWorksComponent,
     ExtendedWarrantyComponent,
     FrequentlyAskedQuestionsComponent,
-    QuestionComponent,
     WarrantyTableComponent,
     SmartCareComponent,
     SmartCareTableComponent,

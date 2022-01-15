@@ -1,14 +1,16 @@
 <div class="container">
     <h3 class="title">Frequently Asked Questions</h3>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
-    <app-question></app-question>
+    <div class="questions">
+        <div>
+            <h4 class="question-title">What is the "TECHZONE Extended Warranty" insurance?</h4>
+            <i [ngClass]="{'rotate': isOpen}" class="fas fa-chevron-down" (click)="toggleText()"></i>
+        </div>
+        <p *ngIf="isOpen" class="text">The "TECHZONE Extended Warranty" insurance provides longer protection of the appliance you have
+            purchased from TECHNOPOLIS. If the average manufacturer's warranty is 2 years, you can prudently extend its
+            period to up to 5 years by using the extended warranty of TECHNOPOLIS. During the period, in which you are
+            protected with the extended warranty of TECHZONE, the insurer "Allianz Bulgaria" Insurance Company will pay
+            for all approved repairs, including for any labour costs and costs for spare parts. You will have a hotline at
+            your disposal – 0700 1 10 30 to communicate any fault to the administrator "Brand Affinity Management Services"
+            EOOD.</p>
+    </div>
 </div>
