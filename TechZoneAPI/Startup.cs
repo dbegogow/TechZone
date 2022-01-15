@@ -28,6 +28,20 @@ namespace TechZoneAPI
             services
                 .AddTransient<IQuestionsService, QuestionsService>();
 
+            services.AddCors(options =>
+            {
+                var frontendUrl = this.Configuration.GetValue<string>("frontend_url");
+
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder
+                        .WithOrigins(frontendUrl)
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials();
+                });
+            });
+
             services
                 .AddSwaggerGen(c =>
                     c.SwaggerDoc("v1", new OpenApiInfo { Title = "TechZoneAPI", Version = "v1" }));
@@ -47,6 +61,7 @@ namespace TechZoneAPI
             app
                 .UseHttpsRedirection()
                 .UseRouting()
+                .UseCors()
                 .UseAuthorization()
                 .UseEndpoints(endpoints =>
                 {
