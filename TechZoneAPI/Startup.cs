@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using TechZoneAPI.Services.Questions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,8 +23,10 @@ namespace TechZoneAPI
                 .AddDbContext<TechZoneDbContext>(options => options
                     .UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddControllers();
+
             services
-                .AddControllers();
+                .AddTransient<IQuestionsService, QuestionsService>();
 
             services
                 .AddSwaggerGen(c =>
