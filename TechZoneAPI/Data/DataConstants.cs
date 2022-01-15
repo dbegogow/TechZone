@@ -32,5 +32,11 @@
             public const int NameMaxLength = 30;
             public const int NameMinLength = 2;
         }
+
+        public class Question
+        {
+            public const int TitleMaxLength = 100;
+            public const int TitleMinLength = 10;
+        }
     }
 }
