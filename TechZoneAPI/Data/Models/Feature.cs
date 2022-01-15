@@ -14,8 +14,7 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(IdMaxLength)]
         public string Id { get; init; } = Guid.NewGuid().ToString();
 
-        [Required]
-        public string FeatureTypeId { get; set; }
+        public int FeatureTypeId { get; set; }
 
         public FeatureType FeatureType { get; set; }
 
