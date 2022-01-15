@@ -22,6 +22,8 @@ namespace TechZoneAPI.Data
 
         public DbSet<Category> Categories { get; init; }
 
+        public DbSet<Question> Questions { get; init; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
