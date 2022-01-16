@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 4
+import { QuestionsService } from '../../../services/questions/questions.service';
+import { Question } from '../../../interfaces/questions/Question';
 
 @Component({
   selector: 'app-frequently-asked-questions',
@@ -7,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrequentlyAskedQuestionsComponent implements OnInit {
   isOpen = false;
+  questions: Question[] = [];
 
-  constructor() { }
+  constructor(private questionsService: QuestionsService) { }
 
   ngOnInit(): void {
+    this.questionsService
+      .getQuestions()
+      .subscribe((questions) => 
+        this.questions = questions)
   }
 
   toggleText() {
