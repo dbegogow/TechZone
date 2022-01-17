@@ -1,11 +1,11 @@
-export interface HeaderInformationBarButton {
+export interface IHeaderInformationBarButton {
     title: string;
     path: string;
     imgClass: string;
     centerTitle: boolean;
 };
 
-export interface FooterInformationBarButton {
+export interface IFooterInformationBarButton {
     title: string;
     path: string;
     imgClass: string;
