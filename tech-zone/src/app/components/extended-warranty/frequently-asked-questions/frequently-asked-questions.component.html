@@ -1,6 +1,6 @@
 <div class="container">
     <h3 class="title">Frequently Asked Questions</h3>
-    <div class="questions">
+    <div *ngFor="let question of questions" class="question">
         <div>
             <h4 class="question-title">What is the "TECHZONE Extended Warranty" insurance?</h4>
             <i [ngClass]="{'rotate': isOpen}" class="fas fa-chevron-down" (click)="toggleText()"></i>

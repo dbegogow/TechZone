@@ -10,26 +10,26 @@
     color: #DB232A;
 }
 
-.container .questions {
+.container .question {
     width: 100%;
     border: 1px solid #D6D6D6;
     padding: 15px 20px;
     margin-top: 25px;
 }
 
-.container .questions div {
+.container .question div {
     display: flex;
     justify-content: space-between;
 }
 
-.container .questions div .question-title {
+.container .question div .question-title {
     margin: 0;
     font-weight: 300;
     font-size: 1.4rem;
     pointer-events: none;
 }
 
-.container .questions div i {
+.container .question div i {
     font-size: 1.5rem;
     position: relative;
     top: 2px;
@@ -37,14 +37,14 @@
     transition: 0.3s;
 }
 
-.container .questions div i.rotate {
+.container .question div i.rotate {
     transform: rotate(180deg);
     transition: 0.3s;
 }
 
 
 
-.container .questions .text {
+.container .question .text {
     font-size: 1.1rem;
     line-height: 1.5rem;
     pointer-events: none;
