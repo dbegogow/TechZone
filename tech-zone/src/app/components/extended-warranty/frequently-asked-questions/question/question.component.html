@@ -1,0 +1,7 @@
+<div class="container">
+    <div>
+        <h4 class="question-title">{{ question.title }}</h4>
+        <i [ngClass]="{'rotate': isOpen}" class="fas fa-chevron-down" (click)="toggleText()"></i>
+    </div>
+    <p *ngIf="isOpen" class="text">{{ question.answer }}</p>
+</div>

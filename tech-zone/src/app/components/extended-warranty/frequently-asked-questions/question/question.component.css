@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div .question-title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.4rem;
+    pointer-events: none;
+}
+
+.container div i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container div i.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+
+
+.container .text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    pointer-events: none;
+}

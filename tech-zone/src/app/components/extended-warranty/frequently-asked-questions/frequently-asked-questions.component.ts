@@ -8,7 +8,6 @@ import { IQuestion } from '../../../interfaces/questions/question';
   styleUrls: ['./frequently-asked-questions.component.css']
 })
 export class FrequentlyAskedQuestionsComponent implements OnInit {
-  isOpen = false;
   questions: IQuestion[] = [];
 
   constructor(private questionsService: QuestionsService) { }
@@ -18,11 +17,5 @@ export class FrequentlyAskedQuestionsComponent implements OnInit {
       .getQuestions()
       .subscribe((questions) =>
         this.questions = questions);
-  }
-
-  toggleText() {
-    this.isOpen
-      ? this.isOpen = false
-      : this.isOpen = true;
   }
 }

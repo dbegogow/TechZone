@@ -48,6 +48,7 @@ import { CompareProductsComponent } from './components/compare-products/compare-
 import { PersonalDataComponent } from './components/account/personal-data/personal-data.component';
 import { DeliveryAddressComponent } from './components/account/delivery-address/delivery-address.component';
 import { UpdatePasswordComponent } from './components/account/update-password/update-password.component';
+import { QuestionComponent } from './components/extended-warranty/frequently-asked-questions/question/question.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -124,7 +125,8 @@ const appRoutes: Routes = [
     CompareProductsComponent,
     PersonalDataComponent,
     DeliveryAddressComponent,
-    UpdatePasswordComponent
+    UpdatePasswordComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
