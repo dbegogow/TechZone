@@ -49,6 +49,7 @@ import { PersonalDataComponent } from './components/account/personal-data/person
 import { DeliveryAddressComponent } from './components/account/delivery-address/delivery-address.component';
 import { UpdatePasswordComponent } from './components/account/update-password/update-password.component';
 import { QuestionComponent } from './components/extended-warranty/frequently-asked-questions/question/question.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -126,7 +127,8 @@ const appRoutes: Routes = [
     PersonalDataComponent,
     DeliveryAddressComponent,
     UpdatePasswordComponent,
-    QuestionComponent
+    QuestionComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
