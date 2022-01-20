@@ -9,13 +9,16 @@ import { IQuestion } from '../../../interfaces/questions/question';
 })
 export class FrequentlyAskedQuestionsComponent implements OnInit {
   questions: IQuestion[] = [];
+  showLoader: boolean = true;
 
   constructor(private questionsService: QuestionsService) { }
 
   ngOnInit(): void {
     this.questionsService
       .getQuestions()
-      .subscribe((questions) =>
-        this.questions = questions);
+      .subscribe((questions) => {
+        this.questions = questions;
+        this.showLoader = false;
+      });
   }
 }
