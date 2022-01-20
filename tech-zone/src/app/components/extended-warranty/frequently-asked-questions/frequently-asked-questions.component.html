@@ -1,15 +1,7 @@
 <div class="container">
     <h3 class="title">Frequently Asked Questions</h3>
+    <app-question *ngFor="let question of questions" [question]="question">
+    </app-question>
 
-    <div *ngIf="showLoader; then showLoader else hideLoader"></div>
-
-    <ng-template #showLoader>
-        <app-loader></app-loader>
-    </ng-template>
-    <ng-template #hideLoader>
-        <div>
-            <app-question *ngFor="let question of questions" [question]="question">
-            </app-question>
-        </div>
-    </ng-template>
+    <app-loader *ngIf="showLoader"></app-loader>
 </div>
