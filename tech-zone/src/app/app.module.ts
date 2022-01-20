@@ -52,7 +52,6 @@ import { QuestionComponent } from './components/extended-warranty/frequently-ask
 import { LoaderComponent } from './components/loader/loader.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'pickup-from-store', component: PickupFromStoreComponent },
   { path: 'extended-warranty', component: ExtendedWarrantyComponent },
@@ -79,6 +78,7 @@ const appRoutes: Routes = [
       { path: 'update-password', component: UpdatePasswordComponent }
     ]
   },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
