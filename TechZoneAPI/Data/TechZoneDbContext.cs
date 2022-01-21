@@ -26,6 +26,12 @@ namespace TechZoneAPI.Data
 
         public DbSet<Question> Questions { get; init; }
 
+        public DbSet<User> Users { get; init; }
+
+        public DbSet<Address> Addresses { get; init; }
+
+        public DbSet<City> Cities { get; init; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
