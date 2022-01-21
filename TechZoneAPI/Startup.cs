@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using TechZoneAPI.Data;
 using TechZoneAPI.Data.Models;
+using TechZoneAPI.Infrastructure;
 using TechZoneAPI.Services.Questions;
 
 namespace TechZoneAPI
@@ -59,6 +60,8 @@ namespace TechZoneAPI
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.PrepareDatabase();
+
             if (env.IsDevelopment())
             {
                 app
