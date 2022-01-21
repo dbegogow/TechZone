@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using TechZoneAPI.Data.Models;
 
@@ -52,6 +53,28 @@ namespace TechZoneAPI.Data
                 .WithMany(ft => ft.Features)
                 .HasForeignKey(f => f.FeatureTypeId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<Image>()
+                .HasOne(i => i.Product)
+                .WithMany(p => p.Images)
+                .HasForeignKey(i => i.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<User>()
+                .HasOne(u => u.Address)
+                .WithMany(a => a.Users)
+                .HasForeignKey(u => u.AddressId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<Address>()
+                .HasOne(a => a.City)
+                .WithMany(c => c.Addresses)
+                .HasForeignKey(a => a.CityId)
+                .OnDelete(DeleteBehavior.Restrict);
+
 
             base.OnModelCreating(builder);
         }
