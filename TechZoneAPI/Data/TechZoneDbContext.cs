@@ -5,9 +5,9 @@ using TechZoneAPI.Data.Models;
 
 namespace TechZoneAPI.Data
 {
-    public class TechZoneDbContext : DbContext
+    public class TechZoneDbContext : IdentityDbContext<User>
     {
-        public TechZoneDbContext(DbContextOptions options)
+        public TechZoneDbContext(DbContextOptions<TechZoneDbContext> options)
             : base(options)
         {
         }
@@ -25,8 +25,6 @@ namespace TechZoneAPI.Data
         public DbSet<Category> Categories { get; init; }
 
         public DbSet<Question> Questions { get; init; }
-
-        public DbSet<User> Users { get; init; }
 
         public DbSet<Address> Addresses { get; init; }
 
