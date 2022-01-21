@@ -1,6 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+
+using Microsoft.AspNetCore.Mvc;
+
 using TechZoneAPI.Models.Questions;
 using TechZoneAPI.Services.Questions;
 
@@ -16,7 +18,8 @@ namespace TechZoneAPI.Controllers
             => this._questions = questions;
 
         [HttpGet]
-        public async Task<ActionResult<List<QuestionServiceModel>>> GetQuestions()
+        public async Task<ActionResult<IEnumerable<QuestionServiceModel>>>
+            GetQuestions()
         {
             var questions = await this._questions
                 .AllQuestions();

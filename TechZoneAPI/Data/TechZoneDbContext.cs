@@ -1,5 +1,6 @@
-﻿using TechZoneAPI.Data.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+
+using TechZoneAPI.Data.Models;
 
 namespace TechZoneAPI.Data
 {

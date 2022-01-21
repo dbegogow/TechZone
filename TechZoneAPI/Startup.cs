@@ -1,12 +1,13 @@
-using TechZoneAPI.Data;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using TechZoneAPI.Services.Questions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
+using TechZoneAPI.Data;
+using TechZoneAPI.Services.Questions;
 
 namespace TechZoneAPI
 {
