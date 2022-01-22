@@ -25,9 +25,9 @@ namespace TechZoneAPI.Data
 
         public DbSet<Question> Questions { get; init; }
 
-        public DbSet<Address> Addresses { get; init; }
-
         public DbSet<City> Cities { get; init; }
+
+        public DbSet<User> Users { get; init; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -66,16 +66,9 @@ namespace TechZoneAPI.Data
 
             builder
                 .Entity<User>()
-                .HasOne(u => u.Address)
-                .WithMany(a => a.Users)
-                .HasForeignKey(u => u.AddressId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            builder
-                .Entity<Address>()
-                .HasOne(a => a.City)
-                .WithMany(c => c.Addresses)
-                .HasForeignKey(a => a.CityId)
+                .HasOne(u => u.City)
+                .WithMany(c => c.Users)
+                .HasForeignKey(u => u.CityId)
                 .OnDelete(DeleteBehavior.Restrict);
 
 

@@ -2,11 +2,13 @@
 
 namespace TechZoneAPI.Services.Users
 {
-    public interface IUserService
+    public interface IUsersService
     {
         Task CreateUser(
             string email,
             string password,
-            string );
+            string firstName,
+            string lastName,
+            string phoneNumber);
     }
 }

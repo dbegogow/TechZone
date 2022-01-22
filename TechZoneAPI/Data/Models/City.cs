@@ -13,6 +13,6 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(NameMaxLength)]
         public string Name { get; set; }
 
-        public ICollection<Address> Addresses { get; init; } = new HashSet<Address>();
+        public ICollection<User> Users { get; init; } = new HashSet<User>();
     }
 }

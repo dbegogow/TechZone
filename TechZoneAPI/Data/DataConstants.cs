@@ -18,6 +18,9 @@ namespace TechZoneAPI.Data
             public const int PasswordMaxLength = 64;
 
             public const int PhoneNumberMaxLength = 13;
+
+            public const int AddressNameMinLength = 5;
+            public const int AddressNameMaxLength = 150;
         }
 
         public class Product
@@ -50,12 +53,6 @@ namespace TechZoneAPI.Data
         {
             public const int TitleMaxLength = 100;
             public const int TitleMinLength = 10;
-        }
-
-        public class Address
-        {
-            public const int NameMinLength = 5;
-            public const int NameMaxLength = 150;
         }
 
         public class City

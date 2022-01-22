@@ -33,8 +33,11 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(PhoneNumberMaxLength)]
         public string PhoneNumber { get; set; }
 
-        public string AddressId { get; set; }
+        [MaxLength(AddressNameMaxLength)]
+        public string Address { get; set; }
 
-        public Address Address { get; set; }
+        public int? CityId { get; set; }
+
+        public City City { get; set; }
     }
 }
