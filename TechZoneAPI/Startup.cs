@@ -1,13 +1,15 @@
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 using TechZoneAPI.Data;
 using TechZoneAPI.Infrastructure;
 using TechZoneAPI.Services.Questions;

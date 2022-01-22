@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 using static TechZoneAPI.Data.DataConstants.User;
@@ -6,6 +7,7 @@ using static TechZoneAPI.Data.DataConstants.Common;
 
 namespace TechZoneAPI.Data.Models
 {
+    [Index(nameof(Email), IsUnique = true)]
     public class User
     {
         [Key]

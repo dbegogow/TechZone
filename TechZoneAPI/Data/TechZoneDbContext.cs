@@ -71,6 +71,11 @@ namespace TechZoneAPI.Data
                 .HasForeignKey(u => u.CityId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            builder
+                .Entity<User>()
+                .HasIndex(b => b.Email)
+                .IsUnique();
+
 
             base.OnModelCreating(builder);
         }

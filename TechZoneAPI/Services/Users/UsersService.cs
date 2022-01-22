@@ -1,8 +1,8 @@
-﻿using System;
+﻿using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
-
+using Microsoft.EntityFrameworkCore;
 using TechZoneAPI.Data;
 using TechZoneAPI.Data.Models;
 
@@ -15,7 +15,7 @@ namespace TechZoneAPI.Services.Users
         public UsersService(TechZoneDbContext data)
             => this._data = data;
 
-        public async Task CreateUser(
+        public async Task Create(
             string email,
             string password,
             string firstName,
@@ -39,6 +39,12 @@ namespace TechZoneAPI.Services.Users
 
             await this._data.SaveChangesAsync();
         }
+
+        public async Task<string> GetIdByEmail(string email)
+            => await this._data
+                .Users
+                .Select(u => u.Email)
+                .FirstOrDefaultAsync(e => e == email);
 
         private string EncryptPassword(string password)
         {
