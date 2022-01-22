@@ -1,4 +1,6 @@
-﻿namespace TechZoneAPI.Data
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+
+namespace TechZoneAPI.Data
 {
     public class DataConstants
     {
@@ -7,10 +9,15 @@
             public const int IdMaxLength = 40;
         }
 
-        public class  User
+        public class User
         {
             public const int NameMinLength = 2;
             public const int NameMaxLength = 30;
+
+            public const int EmailMaxLength = 100;
+            public const int PasswordMaxLength = 64;
+
+            public const int PhoneNumberMaxLength = 13;
         }
 
         public class Product
