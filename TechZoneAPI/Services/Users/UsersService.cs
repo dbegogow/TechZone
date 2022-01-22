@@ -15,7 +15,7 @@ namespace TechZoneAPI.Services.Users
         public UsersService(TechZoneDbContext data)
             => this._data = data;
 
-        public Task CreateUser(
+        public async Task CreateUser(
             string email,
             string password,
             string firstName,
@@ -33,8 +33,11 @@ namespace TechZoneAPI.Services.Users
                 PhoneNumber = phoneNumber
             };
 
-            this._data
-                .
+            await this._data
+                .Users
+                .AddAsync(newUser);
+
+            await this._data.SaveChangesAsync();
         }
 
         private string EncryptPassword(string password)
