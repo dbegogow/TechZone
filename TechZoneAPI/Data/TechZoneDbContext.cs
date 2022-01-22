@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using TechZoneAPI.Data.Models;
 
 namespace TechZoneAPI.Data
 {
-    public class TechZoneDbContext : IdentityDbContext<User>
+    public class TechZoneDbContext : DbContext
     {
         public TechZoneDbContext(DbContextOptions<TechZoneDbContext> options)
             : base(options)

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+
 using TechZoneAPI.Data;
 using TechZoneAPI.Data.Models;
+
 using static TechZoneAPI.WebConstants;
 
 namespace TechZoneAPI.Infrastructure

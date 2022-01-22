@@ -2,13 +2,11 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using TechZoneAPI.Data;
-using TechZoneAPI.Data.Models;
 using TechZoneAPI.Infrastructure;
 using TechZoneAPI.Services.Questions;
 
@@ -26,13 +24,6 @@ namespace TechZoneAPI
             services
                 .AddDbContext<TechZoneDbContext>(options => options
                     .UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
-
-            services
-                .AddIdentity<User, IdentityRole>(options =>
-                {
-                    options.Password.RequireNonAlphanumeric = false;
-                })
-                .AddEntityFrameworkStores<TechZoneDbContext>();
 
             services.AddControllers();
 
