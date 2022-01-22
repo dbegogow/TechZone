@@ -87,6 +87,7 @@ namespace TechZoneAPI
                 .UseHttpsRedirection()
                 .UseRouting()
                 .UseCors()
+                .UseAuthentication()
                 .UseAuthorization()
                 .UseEndpoints(endpoints =>
                 {
