@@ -23,15 +23,12 @@ namespace TechZoneAPI.Data.Models
         [MaxLength(PasswordMaxLength)]
         public string Password { get; set; }
 
-        [Required]
         [MaxLength(NameMaxLength)]
         public string FirstName { get; set; }
 
-        [Required]
         [MaxLength(NameMaxLength)]
         public string LastName { get; set; }
 
-        [Required]
         [MaxLength(PhoneNumberMaxLength)]
         public string PhoneNumber { get; set; }
 

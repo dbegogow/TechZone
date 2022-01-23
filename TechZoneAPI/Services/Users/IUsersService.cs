@@ -7,9 +7,9 @@ namespace TechZoneAPI.Services.Users
         Task Create(
             string email,
             string password,
-            string firstName,
-            string lastName,
-            string phoneNumber);
+            string firstName = null,
+            string lastName = null,
+            string phoneNumber = null);
 
         Task<string> GetIdByEmail(string email);
     }

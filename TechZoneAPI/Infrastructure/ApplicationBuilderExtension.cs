@@ -1,12 +1,11 @@
 ﻿using System;
-
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 using TechZoneAPI.Data;
-using TechZoneAPI.Data.Models;
+using TechZoneAPI.Services.Users;
 
 namespace TechZoneAPI.Infrastructure
 {
@@ -34,33 +33,25 @@ namespace TechZoneAPI.Infrastructure
 
         private static void SeedAdministrator(IServiceProvider services)
         {
-            var userManager = services.GetRequiredService<UserManager<User>>();
+            var users = services.GetRequiredService<IUsersService>();
 
-            //Task
-            //    .Run(async () =>
-            //    {
-            //        const string adminEmail = "admin_tz@gmail.com";
-            //        const string adminPassword = "Admintz1";
+            Task
+                .Run(async () =>
+                {
+                    const string adminEmail = "admin_tz@gmail.com";
+                    const string adminPassword = "Admintz1";
 
-            //        var admin = await userManager.FindByEmailAsync(adminEmail);
+                    var adminId = users.GetIdByEmail(adminEmail);
 
-            //        if (admin != null)
-            //        {
-            //            return;
-            //        }
+                    if (adminId == null)
+                    {
+                        return;
+                    }
 
-            //        var user = new User
-            //        {
-            //            Email = adminEmail,
-            //            UserName = adminEmail
-            //        };
-
-            //        await userManager.CreateAsync(user, adminPassword);
-
-            //        await userManager.AddToRoleAsync(user, AdminRoleName);
-            //    })
-            //    .GetAwaiter()
-            //    .GetResult();
+                    await users.Create(adminEmail, adminPassword);
+                })
+                .GetAwaiter()
+                .GetResult();
         }
     }
 }
