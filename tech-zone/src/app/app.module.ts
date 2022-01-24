@@ -50,6 +50,7 @@ import { DeliveryAddressComponent } from './components/account/delivery-address/
 import { UpdatePasswordComponent } from './components/account/update-password/update-password.component';
 import { QuestionComponent } from './components/extended-warranty/frequently-asked-questions/question/question.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -134,6 +135,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes, { scrollPositionRestoration: 'enabled' })
   ],
   providers: [],

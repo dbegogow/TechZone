@@ -71,9 +71,27 @@
     color: #DB232A;
 }
 
+.container .form-container .form p.error-message {
+    margin: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #DB232A;
+}
+
+.container .form-container .form p.error-message.hidden {
+    opacity: 0;
+}
+
+.container .form-container .form p.error-message i {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
+}
+
 .container .form-container .form input[type=submit]{
     display: block;
-    margin-top: 50px;
+    margin-top: 13px;
     width: 280px;
     height: 47px;
     font-size: 1rem;

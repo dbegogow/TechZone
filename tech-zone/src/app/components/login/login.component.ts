@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
   email: string;
   password: string;
   remember: boolean;
+  hideError: boolean = true;
 
   constructor(
     private router: Router,
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     if (!this.email || !this.password) {
-      alert('Error');
+
       return;
     }
 
@@ -34,9 +35,9 @@ export class LoginComponent implements OnInit {
     // this.authService
     //   .register(user)
     //   .subscribe(() => {
-        
+
     //   });
 
-    this.router.navigate(['home']);
+    // this.router.navigate(['home']);
   }
 }

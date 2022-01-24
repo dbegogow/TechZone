@@ -5,14 +5,18 @@
         <form class="form" (ngSubmit)="onSubmit()">
             <div class="form-control">
                 <label for="email">E-mail</label>
-                <input type="email" name="email">
+                <input type="email" name="email" [(ngModel)]="email">
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" name="password">
+                <input type="password" name="password" [(ngModel)]="password">
             </div>
-            <input type="checkbox" name="remember">
+            <input type="checkbox" name="remember" [(ngModel)]="remember">
             <label for="remember">Remember me</label>
+            <p [ngClass]="{'error-message', 'hidden': hideError}">
+                <i class="fas fa-times"></i>
+                <span>Your email or password was incorrect</span>
+            </p>
             <input type="submit" value="Login">
         </form>
     </div>
