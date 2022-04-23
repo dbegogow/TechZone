@@ -1,23 +1,19 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-using static TechZoneAPI.Data.DataConstants.Common;
-using static TechZoneAPI.Data.DataConstants.Question;
+using TechZoneAPI.Data.Models.Base;
 
-namespace TechZoneAPI.Data.Models
+using static TechZoneAPI.Data.Validation.Question;
+
+namespace TechZoneAPI.Data.Models;
+
+public class Question : DeletableEntity
 {
-    public class Question
-    {
-        [Key]
-        [Required]
-        [MaxLength(IdMaxLength)]
-        public string Id { get; init; } = Guid.NewGuid().ToString();
+    public int Id { get; set; }
 
-        [Required]
-        [MaxLength(TitleMaxLength)]
-        public string Title { get; set; }
+    [Required]
+    [MaxLength(TitleMaxLength)]
+    public string Title { get; set; }
 
-        [Required]
-        public string Answer { get; set; }
-    }
+    [Required]
+    public string Answer { get; set; }
 }

@@ -1,18 +1,18 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-using static TechZoneAPI.Data.DataConstants.Feature;
+using TechZoneAPI.Data.Models.Base;
 
-namespace TechZoneAPI.Data.Models
+using static TechZoneAPI.Data.Validation.Feature;
+
+namespace TechZoneAPI.Data.Models;
+
+public class FeatureType : DeletableEntity
 {
-    public class FeatureType
-    {
-        public int Id { get; init; }
+    public int Id { get; init; }
 
-        [Required]
-        [MaxLength(NameMaxLength)]
-        public string Name { get; set; }
+    [Required]
+    [MaxLength(NameMaxLength)]
+    public string Name { get; set; }
 
-        public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
-    }
+    public ICollection<Feature> Features { get; init; } = new HashSet<Feature>();
 }

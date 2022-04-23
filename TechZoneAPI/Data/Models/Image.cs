@@ -1,17 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TechZoneAPI.Data.Models
+using TechZoneAPI.Data.Models.Base;
+
+namespace TechZoneAPI.Data.Models;
+
+public class Image : DeletableEntity
 {
-    public class Image
-    {
-        public int Id { get; init; }
+    public int Id { get; init; }
 
-        [Required]
-        public string Url { get; set; }
+    [Required]
+    public string Url { get; set; }
 
-        [Required]
-        public string ProductId { get; set; }
+    public int ProductId { get; set; }
 
-        public Product Product { get; set; }
-    }
+    public Product Product { get; set; }
 }

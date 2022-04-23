@@ -1,32 +1,61 @@
 ﻿using System.Text;
 
+using TechZoneAPI.Data;
+using TechZoneAPI.Data.Models;
+using TechZoneAPI.Infrastructure.Services;
+
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-using TechZoneAPI.Data;
-using TechZoneAPI.Services.Questions;
+namespace TechZoneAPI.Infrastructure.Extensions;
 
-namespace TechZoneAPI.Infrastructure.Extensions
+public static class ServiceCollectionExtensions
 {
-    public static class ServiceCollectionExtensions
+    public static JwtSettings GetJwtSettings(
+            this IServiceCollection services,
+            IConfiguration configuration)
     {
-        public static IServiceCollection AddDatabase(
-            this IServiceCollection services,
-            IConfiguration configuration)
-                => services
-                    .AddDbContext<TechZoneDbContext>(options => options
-                        .UseSqlServer(configuration.GetDefaultConnectionString()));
+        var jwtSettingsConfiguration = configuration
+            .GetSection("JWTSettings");
 
-        public static IServiceCollection AddJwtAuthentication(
+        services.Configure<JwtSettings>(jwtSettingsConfiguration);
+
+        return jwtSettingsConfiguration.Get<JwtSettings>();
+    }
+
+    public static IServiceCollection AddDatabase(
             this IServiceCollection services,
             IConfiguration configuration)
-        {
-            var jwtSettings = configuration.GetJwtSettings();
-            services.AddAuthentication(opt =>
+            => services
+                .AddDbContext<TechZoneDbContext>(options => options
+                    .UseSqlServer(configuration.GetDefaultConnectionString()));
+
+    public static IServiceCollection AddIdentity(this IServiceCollection services)
+    {
+        services
+            .AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 6;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            })
+            .AddEntityFrameworkStores<TechZoneDbContext>();
+
+        return services;
+    }
+
+
+    public static IServiceCollection AddJwtAuthentication(
+        this IServiceCollection services,
+        JwtSettings jwtSettings)
+    {
+        services
+            .AddAuthentication(opt =>
             {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -38,34 +67,18 @@ namespace TechZoneAPI.Infrastructure.Extensions
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = jwtSettings.GetSection("validIssuer").Value,
-                    ValidAudience = jwtSettings.GetSection("validAudience").Value,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.GetSection("securityKey").Value))
+                    ValidIssuer = jwtSettings.ValidIssuer,
+                    ValidAudience = jwtSettings.ValidAudience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecurityKey))
                 };
             });
 
-            return services;
-        }
+        return services;
+    }
 
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
-            => services
-                .AddTransient<IQuestionsService, QuestionsService>();
-
-        public static IServiceCollection AddSwagger(this IServiceCollection services)
-            => services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc(
-                    "v1",
-                    new OpenApiInfo
-                    {
-                        Title = "Tech Zone API",
-                        Version = "v1",
-                    });
-            });
-
-        public static IServiceCollection AddCors(
-            this IServiceCollection services,
-            IConfiguration configuration)
+    public static IServiceCollection AddCors(
+        this IServiceCollection services,
+        IConfiguration configuration)
             => services.AddCors(options =>
             {
                 var frontendUrl = configuration.GetFrontendUrl();
@@ -79,5 +92,21 @@ namespace TechZoneAPI.Infrastructure.Extensions
                         .AllowCredentials();
                 });
             });
-    }
+
+
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+            => services
+                .AddScoped<ICurrentUserService, CurrentUserService>();
+
+    public static IServiceCollection AddSwagger(this IServiceCollection services)
+            => services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc(
+                    "v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Tech Zone API",
+                        Version = "v1"
+                    });
+            });
 }

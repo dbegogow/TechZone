@@ -1,18 +1,33 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using TechZoneAPI.Infrastructure.Extensions;
 
-namespace TechZoneAPI
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddDatabase(builder.Configuration)
+    .AddIdentity()
+    .AddJwtAuthentication(builder.Services.GetJwtSettings(builder.Configuration))
+    .AddCors()
+    .AddApplicationServices()
+    .AddSwagger()
+    .AddControllers();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-            => CreateHostBuilder(args)
-                .Build()
-                .Run();
-
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                    webBuilder.UseStartup<Startup>());
-    }
+    app.UseDeveloperExceptionPage();
 }
+
+app
+    .UseSwaggerUI()
+    .UseRouting()
+    .UseCors()
+    .UseAuthentication()
+    .UseAuthorization()
+    .UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers();
+    })
+    .ApplyMigrations();
+
+app.Run();

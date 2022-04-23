@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-using static TechZoneAPI.Data.DataConstants.Common;
-using static TechZoneAPI.Data.DataConstants.Category;
+using TechZoneAPI.Data.Models.Base;
 
-namespace TechZoneAPI.Data.Models
+using static TechZoneAPI.Data.Validation.Category;
+
+namespace TechZoneAPI.Data.Models;
+
+public class Category : DeletableEntity
 {
-    public class Category
-    {
-        [Key]
-        [Required]
-        [MaxLength(IdMaxLength)]
-        public string Id { get; init; } = Guid.NewGuid().ToString();
+    public int Id { get; set; }
 
-        [MaxLength(NameMaxLength)]
-        public string Name { get; set; }
+    [MaxLength(NameMaxLength)]
+    public string Name { get; set; }
 
-        public ICollection<Product> Products { get; init; } = new HashSet<Product>();
-    }
+    public ICollection<Product> Products { get; init; } = new HashSet<Product>();
 }
