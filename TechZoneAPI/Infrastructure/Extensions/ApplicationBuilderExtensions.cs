@@ -1,5 +1,7 @@
 ﻿using TechZoneAPI.Data;
 
+using Microsoft.EntityFrameworkCore;
+
 namespace TechZoneAPI.Infrastructure.Extensions;
 
 public static class ApplicationBuilderExtensions
