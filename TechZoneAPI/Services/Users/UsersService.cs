@@ -2,7 +2,9 @@
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+
 using Microsoft.EntityFrameworkCore;
+
 using TechZoneAPI.Data;
 using TechZoneAPI.Data.Models;
 
@@ -48,7 +50,7 @@ namespace TechZoneAPI.Services.Users
 
         private string EncryptPassword(string password)
         {
-            var crypt = new SHA256Managed();
+            var crypt = SHA256.Create();
             string hash = string.Empty;
 
             byte[] crypto = crypt.ComputeHash(Encoding.ASCII.GetBytes(password));
