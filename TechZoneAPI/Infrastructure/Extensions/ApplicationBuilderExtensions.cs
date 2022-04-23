@@ -12,7 +12,7 @@ public static class ApplicationBuilderExtensions
                 .UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint("/swagger/v1/swagger.json", "Tech Zone API");
-                    options.RoutePrefix = string.Empty;
+                    options.RoutePrefix = "swagger";
                 });
 
     public static void ApplyMigrations(this IApplicationBuilder app)
